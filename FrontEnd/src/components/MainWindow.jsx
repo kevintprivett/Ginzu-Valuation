@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { BrowserRouter as Router,
-  Routes, Route, Link, Navigate
+  Routes, Route, Link, Navigate, useLocation
 } from 'react-router-dom'
 import {
   Box,
@@ -43,14 +43,32 @@ const a11yProps = (index) => {
 }
 
 const VerticalTabs = () => {
+  const location = useLocation()
   const [value, setValue] = useState(0)
+
+  const routeToIndex = {
+    '/company': 0,
+    '/financials': 1,
+    '/cost-of-capital': 2,
+    '/misc': 3,
+    '/future-projections': 4,
+    '/valuation-output': 5,
+    '/utils': 6
+  }
+
+  useEffect(() => {
+    const index = routeToIndex[location.pathname]
+    if (index !== undefined) {
+      setValue(index)
+    }
+  }, [location.pathname])
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   }
 
   return (
-    <Router basename="/Ginzu-Valuation">
+    <>
       <Box
         sx={{ 
           flexGrow: 1,
@@ -80,53 +98,53 @@ const VerticalTabs = () => {
           <Tab label="Utils" to='/utils' component={Link} {...a11yProps(6)} />
         </Tabs>
         <Routes>
-          <Route path="*" element={<Navigate to="/company" />} />
+          <Route path="*" element={<Navigate to="company" replace />} />
           <Route index path="/company" element={
             <TabPanel>
               <CompanyInfoPanel />
             </TabPanel>
           } />
-          <Route path="/financials" element={
+          <Route path="financials" element={
             <TabPanel value={value} index={1}>
               <FinancialsPanel />
             </TabPanel>
           } />
-          <Route path="/cost-of-capital" element={
+          <Route path="cost-of-capital" element={
             <TabPanel value={value} index={2}>
               <CostOfCapitalPanel />
             </TabPanel>
           } />
-          <Route path="/misc" element={
+          <Route path="misc" element={
             <TabPanel value={value} index={3}>
               <MiscPanel />
             </TabPanel>
           } />
-          <Route path="/future-projections" element={
+          <Route path="future-projections" element={
             <TabPanel value={value} index={4}>
               <FutureProjectionsPanel />
             </TabPanel>
           } />
-          <Route path="/valuation-output" element={
+          <Route path="valuation-output" element={
             <TabPanel value={value} index={5}>
               <ValuationOutputPanel />
             </TabPanel>
           } />
-          <Route path="/utils" element={
+          <Route path="utils" element={
             <TabPanel value={value} index={6}>
               <UtilsPanel />
             </TabPanel>
           } />
         </Routes>
       </Box>
-    </Router>
+    </>
   )
 }
 
 const MainWindow = () => {
   return (
-    <>
+    <Router basename="/Ginzu-Valuation">
       <VerticalTabs />
-    </>
+    </Router>
   )
 }
 
