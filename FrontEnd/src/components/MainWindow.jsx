@@ -99,7 +99,7 @@ const VerticalTabs = () => {
         </Tabs>
         <Routes>
           <Route path="*" element={<Navigate to="company" replace />} />
-          <Route index path="/company" element={
+          <Route index path="company" element={
             <TabPanel>
               <CompanyInfoPanel />
             </TabPanel>
@@ -142,7 +142,7 @@ const VerticalTabs = () => {
 
 const MainWindow = () => {
   return (
-    <Router basename="/Ginzu-Valuation">
+    <Router>
       <VerticalTabs />
     </Router>
   )
