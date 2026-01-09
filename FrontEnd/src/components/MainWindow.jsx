@@ -50,7 +50,7 @@ const VerticalTabs = () => {
   }
 
   return (
-    <Router>
+    <Router basename="/Ginzu-Valuation">
       <Box
         sx={{ 
           flexGrow: 1,
