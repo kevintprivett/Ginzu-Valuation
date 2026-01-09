@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router,
+import { HashRouter as Router,
   Routes, Route, Link, Navigate, useLocation
 } from 'react-router-dom'
 import {
