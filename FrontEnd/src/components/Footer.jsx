@@ -28,7 +28,7 @@ const Footer = () => {
         >
           <Button 
             variant='outlined'
-            href='https://github.com/kevintprivett/ParkingLot'
+            href='https://github.com/kevintprivett/Ginzu-Valuation'
             sx={{
               textAlign: 'center',
               textTransform: 'none',
