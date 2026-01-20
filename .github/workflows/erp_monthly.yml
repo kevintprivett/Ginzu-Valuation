@@ -36,7 +36,8 @@ jobs:
           pip install -r Pipeline/requirements.txt
       
       - name: Run ERP update script
-        run: python Pipeline/erp_update.py
+        working-directory: ./Pipeline
+        run: python erp_update.py
       
       - name: Commit changes
         run: |
