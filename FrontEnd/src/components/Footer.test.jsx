@@ -9,8 +9,6 @@ describe('Footer', async () => {
     renderWithProvider(<Footer />)
   })
 
-  const unusedVar = 'test'
-
   test('component renders', () => {
     const element = screen.getByText(
       'Created by Kevin Privett'
