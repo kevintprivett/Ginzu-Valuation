@@ -1,0 +1,25 @@
+name: Security audit
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Weekly on Sundays at midnights
+  workflow_dispatch:
+  
+jobs:
+  security-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          cache-dependency-path: './FrontEnd'
+          node-version: lts/*
+          cache: 'npm'
+      - name: Install dependencies
+        working-directory: ./FrontEnd
+        run: npm ci
+      - name: Security audit
+        working-directory: ./FrontEnd
+        run: npm audit --audit-level=high
