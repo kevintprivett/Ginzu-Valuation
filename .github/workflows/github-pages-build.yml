@@ -1,9 +1,10 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Build, Test, and Deploy to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs the workflow on pushes or pull requests to the main branch
   push:
+    branches: ['main']
+  pull_request:
     branches: ['main']
 
   # Allows you to run this workflow manually from the Actions tab
@@ -15,13 +16,12 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
+# Prevents concurrent deployments to GitHub Pages
 concurrency:
   group: 'pages'
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -39,16 +39,24 @@ jobs:
       - name: Install dependencies
         working-directory: ./FrontEnd
         run: npm ci
+      - name: Lint check
+        working-directory: ./FrontEnd
+        run: npm run lint
       - name: Build
         working-directory: ./FrontEnd
         run: npm run build
+      - name: Unit testing
+        working-directory: ./FrontEnd
+        run: npm run test
       - name: Setup Pages
+        if: ${{ github.event_name == 'push'}}
         uses: actions/configure-pages@v5
       - name: Upload artifact
+        if: ${{ github.event_name == 'push'}}
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist folder
           path: './FrontEnd/dist'
       - name: Deploy to GitHub Pages
+        if: ${{ github.event_name == 'push'}}
         id: deployment
         uses: actions/deploy-pages@v4
