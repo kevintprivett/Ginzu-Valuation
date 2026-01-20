@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 
 import { renderWithProvider } from '../utils/testUtils.jsx'
-import Footer from './Footer'
+// import Footer from './Footer'
 
 
 describe('Footer', async () => {
