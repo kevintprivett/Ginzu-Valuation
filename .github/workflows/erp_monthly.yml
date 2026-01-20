@@ -1,0 +1,63 @@
+name: Monthly ERP Update
+permissions:
+  contents: write
+  pull-requests: write
+
+on:
+  schedule:
+    - cron: '0 0 5 * *' # Monthly on the fifth at midnight
+  workflow_dispatch:
+  
+jobs:
+  erp-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.x'
+
+      - name: Get current date
+        id: date
+        run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Create branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git checkout -b erp-update-${{ steps.date.outputs.DATE }}
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r Pipeline/requirements.txt
+      
+      - name: Run ERP update script
+        run: python Pipeline/erp_update.py
+      
+      - name: Commit changes
+        run: |
+          git add FrontEnd/src/utils/marketData.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update marketData.json - ${{ steps.date.outputs.date }}"
+          fi
+      
+      - name: Push branch
+        run: |
+          git push origin erp-update-${{ steps.date.outputs.DATE }}
+      
+      - name: Create Pull requests
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update marketData.json - ${{ steps.date.outputs.date }}
+          branch: erp-update-${{ steps.date.outputs.DATE }}
+          title: Monthly ERP Update - ${{ steps.date.outputs.date }}
+          body: This PR updates the Equity Risk Premium (ERP) data used in the Ginzu application. The ERP has been updated to reflect the latest market conditions as of ${{ steps.date.outputs.date }}.
+          base: main
+          labels: automated-update
