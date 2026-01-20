@@ -46,17 +46,17 @@ const VerticalTabs = () => {
   const location = useLocation()
   const [value, setValue] = useState(0)
 
-  const routeToIndex = {
-    '/company': 0,
-    '/financials': 1,
-    '/cost-of-capital': 2,
-    '/misc': 3,
-    '/future-projections': 4,
-    '/valuation-output': 5,
-    '/utils': 6
-  }
-
   useEffect(() => {
+    const routeToIndex = {
+      '/company': 0,
+      '/financials': 1,
+      '/cost-of-capital': 2,
+      '/misc': 3,
+      '/future-projections': 4,
+      '/valuation-output': 5,
+      '/utils': 6
+    }
+
     const index = routeToIndex[location.pathname]
     if (index !== undefined) {
       setValue(index)
