@@ -45,12 +45,8 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update marketData.json - ${{ steps.date.outputs.date }}"
+            git commit -m "Update marketData.json - ${{ steps.date.outputs.DATE }}"
           fi
-      
-      - name: Push branch
-        run: |
-          git push origin erp-update-${{ steps.date.outputs.DATE }}
       
       - name: Create Pull requests
         uses: peter-evans/create-pull-request@v8
