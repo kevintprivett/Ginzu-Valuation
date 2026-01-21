@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   
 jobs:
-  erp-update:
+  rfr-update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
