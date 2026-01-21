@@ -1,11 +1,11 @@
-name: Monthly ERP Update
+name: Weekly RFR Update
 permissions:
   contents: write
   pull-requests: write
 
 on:
   schedule:
-    - cron: '0 0 5 * *' # Monthly on the fifth at midnight
+    - cron: '0 23 * * 1' # weekly on monday at 6 PM EST
   workflow_dispatch:
   
 jobs:
@@ -29,19 +29,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r Pipeline/requirements.txt
       
-      - name: Run ERP update script
+      - name: Run RFR update script
         working-directory: ./Pipeline
-        run: python erp_update.py
+        run: python rfr_update.py
       
       - name: Create Pull request
         uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GINZU_PULL_REQUEST_TOKEN }}
-          commit-message: Monthly ERP Update - ${{ steps.date.outputs.DATE }}
-          branch: erp-update-${{ steps.date.outputs.DATE }}
-          title: Monthly ERP Update - ${{ steps.date.outputs.DATE }}
+          commit-message: Weekly RFR Update - ${{ steps.date.outputs.DATE }}
+          branch: rfr-update-${{ steps.date.outputs.DATE }}
+          title: Weekly RFR Update - ${{ steps.date.outputs.DATE }}
           body: |
-            This PR updates the Equity Risk Premium (ERP) data used in the Ginzu application.
-            The ERP has been updated to reflect the latest market conditions as of ${{ steps.date.outputs.DATE }}.
+            This PR updates the Risk Free Rate (RFR) data used in the Ginzu application.
+            The RFR has been updated to reflect the latest market conditions as of ${{ steps.date.outputs.DATE }}.
           base: main
           labels: automated-update
