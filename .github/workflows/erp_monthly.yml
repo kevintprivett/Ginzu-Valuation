@@ -24,12 +24,6 @@ jobs:
         id: date
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
-      - name: Create branch
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git checkout -b erp-update-${{ steps.date.outputs.DATE }}
-
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
@@ -48,13 +42,12 @@ jobs:
             git commit -m "Update marketData.json - ${{ steps.date.outputs.DATE }}"
           fi
       
-      - name: Create Pull requests
+      - name: Create Pull request
         uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update marketData.json - ${{ steps.date.outputs.date }}
           branch: erp-update-${{ steps.date.outputs.DATE }}
-          title: Monthly ERP Update - ${{ steps.date.outputs.date }}
-          body: This PR updates the Equity Risk Premium (ERP) data used in the Ginzu application. The ERP has been updated to reflect the latest market conditions as of ${{ steps.date.outputs.date }}.
+          title: Monthly ERP Update - ${{ steps.date.outputs.DATE }}
+          body: This PR updates the Equity Risk Premium (ERP) data used in the Ginzu application. The ERP has been updated to reflect the latest market conditions as of ${{ steps.date.outputs.DATE }}.
           base: main
           labels: automated-update
