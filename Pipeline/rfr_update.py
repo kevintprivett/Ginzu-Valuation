@@ -40,7 +40,11 @@ for row in rfr_rows:
 
     cols = row.find_all('td')
     try:
-        rfr = float(cols[-1].get_text(strip=True))
+        for col in reversed(cols):
+            if col.get_text(strip=True) == '':
+                continue
+            rfr = float(col.get_text(strip=True))
+            break
         break
     except Exception as e:
         print(f"Invalid rfr value")
