@@ -1,0 +1,23 @@
+name: Market Data Yearly Update Issue
+permissions:
+  contents: read
+  issues: write
+
+on:
+  schedule:
+    - cron: '0 0 15 1 *' # Yearly on January 15th at midnight
+  workflow_dispatch:
+  
+jobs:
+  market-data-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      
+      - name: Create an issues
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/market_data_yearly_issue.md
