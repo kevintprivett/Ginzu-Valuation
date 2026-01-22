@@ -10,7 +10,7 @@ const ErpCountry = () => {
       <Typography
         variant='body1'
       >
-        Country of Incorporation: 'United States' ERP: {marketData.countries['United States']['ERP']}%
+        <em>Country of Incorporation: United States ERP: {marketData.countries['United States']['ERP']}%</em>
       </Typography>
     </>
   )

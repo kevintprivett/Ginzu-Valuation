@@ -55,8 +55,8 @@ const CostOfDebtDirect = () => {
       </Stack>
       <Typography
         variant='body1'
-        align='center'
-        sx={{ width: 400 }}
+        align='left'
+        sx={{ minWidth: 500 }}
       >
         <em>Average Cost of Debt for {company.industry} is {marketData.industries[company.industry]['Cost of Debt']}%</em>
       </Typography>

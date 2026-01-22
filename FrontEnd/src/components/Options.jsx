@@ -13,7 +13,7 @@ const textFieldProps = {
   variant: 'outlined',
   size: 'small',
   sx: {
-    width: 200
+    minWidth: 200
   }
 }
 
@@ -43,7 +43,7 @@ const Options = () => {
         <Typography
           variant='body1'
           sx={{
-            width: 300
+            minWidth: 300
           }}
         >
           Number of Options Outstanding
@@ -71,7 +71,7 @@ const Options = () => {
         <Typography
           variant='body1'
           sx={{
-            width: 300
+            minWidth: 300
           }}
         >
           Average Strike Price
@@ -99,7 +99,7 @@ const Options = () => {
         <Typography
           variant='body1'
           sx={{
-            width: 300
+            minWidth: 300
           }}
         >
           Average Maturity
@@ -127,7 +127,7 @@ const Options = () => {
         <Typography
           variant='body1'
           sx={{
-            width: 300
+            minWidth: 300
           }}
         >
           Implied Volatility of Stock
