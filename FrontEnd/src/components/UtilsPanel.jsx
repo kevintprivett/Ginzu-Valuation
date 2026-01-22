@@ -6,8 +6,6 @@ import {
 
 import { updateAll, reset } from '../reducers/companyReducer'
 
-// TODO: make pretty
-
 const UtilsPanel = () => {
   const dispatch = useDispatch()
   const company = useSelector((state) => state.company)
@@ -36,13 +34,14 @@ const UtilsPanel = () => {
       <Stack
         spacing={2}
         sx={{
-          width: 500
+          px: 2,
+          width: 250
         }}
       >
-        <Button variant="contained" href={exportCompany()} download="company_data.json">
+        <Button variant="outlined" href={exportCompany()} download="company_data.json">
           Export Company Data
         </Button>
-        <Button variant = "contained" component="label">
+        <Button variant = "outlined" component="label">
           Import Company Data
           <input
             type="file"
@@ -51,7 +50,7 @@ const UtilsPanel = () => {
             onChange={importCompany}
           />
         </Button>
-        <Button variant="contained" onClick={() => resetCompany()}>
+        <Button variant="outlined" onClick={() => resetCompany()}>
           Reset Company Data
         </Button>
       </Stack>
