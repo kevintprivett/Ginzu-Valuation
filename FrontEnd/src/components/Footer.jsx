@@ -13,7 +13,7 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
 const Footer = () => {
   return (
     <Box sx={{
-      width: 350,
+      width: 400,
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -21,7 +21,7 @@ const Footer = () => {
     }}>
       <Stack alignItems='center' >
         <Paper sx={{
-            width: 300,
+            width: 250,
             mt: 2,
             mb: 2
           }}
@@ -34,14 +34,14 @@ const Footer = () => {
               textTransform: 'none',
             }}
           >
-            <Typography variant='h5'>
+            <Typography variant='h6'>
               Learn more about this project on GitHub
             </Typography>
           </Button>
         </Paper>
         <Box>
           <Typography
-            variant='h4'
+            variant='h5'
             sx={{
               textAlign: 'center'
             }}
@@ -51,14 +51,14 @@ const Footer = () => {
         </Box>
         <Stack
           direction='row'
-          spacing={2}
+          spacing={1}
         >
           <IconButton 
             href='https://github.com/kevintprivett'
           >
             <GitHubIcon
               sx={{
-                fontSize: 80
+                fontSize: 60
               }}
             />
           </IconButton>
@@ -67,7 +67,7 @@ const Footer = () => {
           >
             <LinkedInIcon
               sx={{
-                fontSize: 80
+                fontSize: 60
               }}
             />
           </IconButton>
@@ -76,7 +76,7 @@ const Footer = () => {
           >
             <AlternateEmailIcon
               sx={{
-                fontSize: 80
+                fontSize: 60
               }}
             />
           </IconButton>
