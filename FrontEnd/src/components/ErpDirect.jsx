@@ -56,8 +56,8 @@ const ErpDirect = () => {
       </Stack>
       <Typography
         variant='body1'
-        align='center'
-        sx={{ width: 400 }}
+        align='left'
+        sx={{ minWidth: 400 }}
       >
         <em>Equity Risk Premium for U.S. is {marketData.countries["United States"].ERP}%</em>
       </Typography>

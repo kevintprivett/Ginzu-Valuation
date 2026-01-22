@@ -24,6 +24,7 @@ export default defineConfig([
     },
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: "^_" }],
+      'no-warning-comments': ['error', { terms: ['fixme', 'todo', 'delete'], location: 'anywhere' }],
     },
   },
   {

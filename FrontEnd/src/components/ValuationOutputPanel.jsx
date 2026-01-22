@@ -111,7 +111,7 @@ const ValuationBarChart = (
         top: 20,
         bottom: 10,
         right: 5,
-        left: 40
+        left: 50
       }}
       data={data}
     >
@@ -188,7 +188,7 @@ const CashFlowLineChart = (
         top: 20,
         bottom: 20,
         right: 5,
-        left: 40
+        left: 50
       }}
       data={data}
     >

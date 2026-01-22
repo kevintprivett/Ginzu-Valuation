@@ -68,75 +68,74 @@ const VerticalTabs = () => {
   }
 
   return (
-    <>
-      <Box
-        sx={{ 
-          flexGrow: 1,
-          bgcolor: 'background.paper',
-          display: 'flex',
-          minHeight: 400,
-          mx: 10,
-          py: 4,
-          borderRadius: 5
+    <Box
+      sx={{ 
+        flexGrow: 1,
+        bgcolor: 'background.paper',
+        display: 'flex',
+        minHeight: 400,
+        mx: 5,
+        py: 4,
+        borderRadius: 5
+      }}
+    >
+      <Tabs
+        orientation="vertical"
+        value={value}
+        onChange={handleChange}
+        sx={{
+          borderRight: 1,
+          borderColor: 'divider',
+          minWidth: '180px'
         }}
       >
-        <Tabs
-          orientation="vertical"
-          value={value}
-          onChange={handleChange}
-          sx={{
-            borderRight: 1,
-            borderColor: 'divider'
-          }}
-        >
-          <Tab label="Company Info" to='/company' component={Link} {...a11yProps(0)} />
-          <Tab label="Financials" to='/financials' component={Link} {...a11yProps(1)} />
-          <Tab label="Cost of Capital" to='/cost-of-capital' component={Link} {...a11yProps(2)} />
-          <Tab label="Misc: Options, R&D" to='/misc' component={Link} {...a11yProps(3)} />
-          <Tab label="Future Projections" to='/future-projections' component={Link} {...a11yProps(4)} />
-          <Tab label="Valuation Output" to='/valuation-output' component={Link} {...a11yProps(5)} />
-          <Tab label="Utils" to='/utils' component={Link} {...a11yProps(6)} />
-        </Tabs>
-        <Routes>
-          <Route path="*" element={<Navigate to="company" replace />} />
-          <Route index path="company" element={
-            <TabPanel>
-              <CompanyInfoPanel />
-            </TabPanel>
-          } />
-          <Route path="financials" element={
-            <TabPanel value={value} index={1}>
-              <FinancialsPanel />
-            </TabPanel>
-          } />
-          <Route path="cost-of-capital" element={
-            <TabPanel value={value} index={2}>
-              <CostOfCapitalPanel />
-            </TabPanel>
-          } />
-          <Route path="misc" element={
-            <TabPanel value={value} index={3}>
-              <MiscPanel />
-            </TabPanel>
-          } />
-          <Route path="future-projections" element={
-            <TabPanel value={value} index={4}>
-              <FutureProjectionsPanel />
-            </TabPanel>
-          } />
-          <Route path="valuation-output" element={
-            <TabPanel value={value} index={5}>
-              <ValuationOutputPanel />
-            </TabPanel>
-          } />
-          <Route path="utils" element={
-            <TabPanel value={value} index={6}>
-              <UtilsPanel />
-            </TabPanel>
-          } />
-        </Routes>
-      </Box>
-    </>
+        <Tab label="Company Info" to='/company' component={Link} {...a11yProps(0)} />
+        <Tab label="Financials" to='/financials' component={Link} {...a11yProps(1)} />
+        <Tab label="Cost of Capital" to='/cost-of-capital' component={Link} {...a11yProps(2)} />
+        <Tab label="Misc: Options, R&D" to='/misc' component={Link} {...a11yProps(3)} />
+        <Tab label="Future Projections" to='/future-projections' component={Link} {...a11yProps(4)} />
+        <Tab label="Valuation Output" to='/valuation-output' component={Link} {...a11yProps(5)} />
+        <Tab label="Utils" to='/utils' component={Link} {...a11yProps(6)} />
+      </Tabs>
+      <Routes>
+        <Route path="*" element={<Navigate to="company" replace />} />
+        <Route index path="company" element={
+          <TabPanel>
+            <CompanyInfoPanel />
+          </TabPanel>
+        } />
+        <Route path="financials" element={
+          <TabPanel value={value} index={1}>
+            <FinancialsPanel />
+          </TabPanel>
+        } />
+        <Route path="cost-of-capital" element={
+          <TabPanel value={value} index={2}>
+            <CostOfCapitalPanel />
+          </TabPanel>
+        } />
+        <Route path="misc" element={
+          <TabPanel value={value} index={3}>
+            <MiscPanel />
+          </TabPanel>
+        } />
+        <Route path="future-projections" element={
+          <TabPanel value={value} index={4}>
+            <FutureProjectionsPanel />
+          </TabPanel>
+        } />
+        <Route path="valuation-output" element={
+          <TabPanel value={value} index={5}>
+            <ValuationOutputPanel />
+          </TabPanel>
+        } />
+        <Route path="utils" element={
+          <TabPanel value={value} index={6}>
+            <UtilsPanel />
+          </TabPanel>
+        } />
+      </Routes>
+    </Box>
   )
 }
 

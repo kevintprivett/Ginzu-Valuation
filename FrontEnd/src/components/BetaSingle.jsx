@@ -17,7 +17,7 @@ const BetaSingle = () => {
       <Typography
         variant='body1'
       >
-        Industry: {company.industry} Beta: {marketData.industries[company.industry]['Beta']}
+        <em>Industry: {company.industry} Beta: {marketData.industries[company.industry]['Beta']}</em>
       </Typography>
     </>
   )

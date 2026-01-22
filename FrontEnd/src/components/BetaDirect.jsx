@@ -55,8 +55,8 @@ const BetaDirect = () => {
       </Stack>
       <Typography
         variant='body1'
-        align='center'
-        sx={{ width: 400 }}
+        align='left'
+        sx={{ minWidth: 420 }}
       >
         <em>Average Unlevered Beta for {company.industry} is {marketData.industries[company.industry]['Beta']}</em>
       </Typography>
