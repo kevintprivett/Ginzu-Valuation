@@ -45,3 +45,4 @@ jobs:
             The RFR has been updated to reflect the latest market conditions as of ${{ steps.date.outputs.DATE }}.
           base: main
           labels: automated-update
+          assignees: kevintprivett 
