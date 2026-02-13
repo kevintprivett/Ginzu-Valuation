@@ -1,5 +1,5 @@
 {
-  "rfr": 4.22,
+  "rfr": 4.18,
   "taxRate": 25.0,
   "industries": {
     "Choose an Industry": {
@@ -13,1038 +13,1060 @@
       "Tax Rate": 12.34
     },
     "Advertising": {
-      "EV/Sales": 2.75,
-      "Cost of Capital": 9.22,
-      "Beta": 1.12,
-      "Revenue Growth Rate": -1.62,
-      "Operating Margin": 11.25,
-      "Sales Cap Ratio": 4.19,
-      "ROIC": 34.91,
-      "Tax Rate": 7.67,
-      "Cost of Debt": 6.41
+      "EV/Sales": 2.12,
+      "Cost of Capital": 7.81,
+      "Beta": 0.93,
+      "Revenue Growth Rate": 17.67,
+      "Operating Margin": 10.05,
+      "Sales Cap Ratio": 3.85,
+      "ROIC": 27.72,
+      "Tax Rate": 5.02,
+      "Cost of Debt": 5.29
     },
     "Aerospace/Defense": {
-      "EV/Sales": 2.6,
-      "Cost of Capital": 7.68,
-      "Beta": 0.77,
-      "Revenue Growth Rate": 8.21,
-      "Operating Margin": 7.66,
-      "Sales Cap Ratio": 2.62,
-      "ROIC": 14.03,
-      "Tax Rate": 11.02,
-      "Cost of Debt": 5.53
+      "EV/Sales": 3.57,
+      "Cost of Capital": 7.6,
+      "Beta": 0.85,
+      "Revenue Growth Rate": 11.1,
+      "Operating Margin": 8.7,
+      "Sales Cap Ratio": 2.74,
+      "ROIC": 16.01,
+      "Tax Rate": 11.58,
+      "Cost of Debt": 5.29
     },
     "Air Transport": {
-      "EV/Sales": 1.02,
-      "Cost of Capital": 7.29,
-      "Beta": 0.69,
-      "Revenue Growth Rate": 2.64,
-      "Operating Margin": 5.46,
-      "Sales Cap Ratio": 1.75,
-      "ROIC": 8.48,
-      "Tax Rate": 10.15,
-      "Cost of Debt": 6.41
+      "EV/Sales": 1.03,
+      "Cost of Capital": 6.72,
+      "Beta": 0.7,
+      "Revenue Growth Rate": 47.79,
+      "Operating Margin": 4.88,
+      "Sales Cap Ratio": 1.8,
+      "ROIC": 7.93,
+      "Tax Rate": 8.29,
+      "Cost of Debt": 5.29
     },
     "Apparel": {
-      "EV/Sales": 1.41,
-      "Cost of Capital": 7.44,
-      "Beta": 0.74,
-      "Revenue Growth Rate": 6.97,
-      "Operating Margin": 9.61,
-      "Sales Cap Ratio": 1.73,
-      "ROIC": 15.26,
-      "Tax Rate": 8.08,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.59,
+      "Cost of Capital": 7.13,
+      "Beta": 0.76,
+      "Revenue Growth Rate": 8.1,
+      "Operating Margin": 9.89,
+      "Sales Cap Ratio": 1.77,
+      "ROIC": 15.77,
+      "Tax Rate": 9.61,
+      "Cost of Debt": 5.29
     },
     "Auto & Truck": {
-      "EV/Sales": 3.47,
-      "Cost of Capital": 10.34,
-      "Beta": 1.39,
-      "Revenue Growth Rate": 10.9,
-      "Operating Margin": 3.21,
-      "Sales Cap Ratio": 1.15,
-      "ROIC": 3.15,
-      "Tax Rate": 2.11,
-      "Cost of Debt": 6.41
+      "EV/Sales": 3.88,
+      "Cost of Capital": 9.38,
+      "Beta": 1.27,
+      "Revenue Growth Rate": 8.64,
+      "Operating Margin": 2.38,
+      "Sales Cap Ratio": 1.08,
+      "ROIC": 2.25,
+      "Tax Rate": 3.74,
+      "Cost of Debt": 5.29
     },
     "Auto Parts": {
-      "EV/Sales": 0.75,
-      "Cost of Capital": 8.09,
-      "Beta": 0.91,
-      "Revenue Growth Rate": 6.49,
-      "Operating Margin": 5.21,
-      "Sales Cap Ratio": 2.43,
-      "ROIC": 8.66,
-      "Tax Rate": 12.77,
-      "Cost of Debt": 5.78
+      "EV/Sales": 0.82,
+      "Cost of Capital": 8.18,
+      "Beta": 1.02,
+      "Revenue Growth Rate": 15.91,
+      "Operating Margin": 5.8,
+      "Sales Cap Ratio": 2.39,
+      "ROIC": 8.98,
+      "Tax Rate": 15.0,
+      "Cost of Debt": 5.29
     },
     "Bank (Money Center)": {
-      "EV/Sales": null,
-      "Cost of Capital": 5.64,
-      "Beta": 0.37,
-      "Revenue Growth Rate": 6.0,
-      "Operating Margin": null,
-      "Sales Cap Ratio": null,
+      "EV/Sales": 8.31,
+      "Cost of Capital": 4.98,
+      "Beta": 0.34,
+      "Revenue Growth Rate": 9.06,
+      "Operating Margin": 0.08,
+      "Sales Cap Ratio": 0.19,
       "ROIC": null,
-      "Tax Rate": 18.1,
-      "Cost of Debt": 5.53
+      "Tax Rate": 18.43,
+      "Cost of Debt": 4.73
     },
     "Banks (Regional)": {
-      "EV/Sales": null,
-      "Cost of Capital": 5.69,
-      "Beta": 0.36,
-      "Revenue Growth Rate": 6.54,
-      "Operating Margin": null,
-      "Sales Cap Ratio": null,
+      "EV/Sales": 4.28,
+      "Cost of Capital": 4.98,
+      "Beta": 0.29,
+      "Revenue Growth Rate": 8.05,
+      "Operating Margin": -0.12,
+      "Sales Cap Ratio": 0.33,
       "ROIC": null,
-      "Tax Rate": 16.84,
-      "Cost of Debt": 5.08
+      "Tax Rate": 17.61,
+      "Cost of Debt": 4.73
     },
     "Beverage (Alcoholic)": {
-      "EV/Sales": 3.3,
-      "Cost of Capital": 6.55,
-      "Beta": 0.5,
-      "Revenue Growth Rate": 5.09,
-      "Operating Margin": 22.88,
-      "Sales Cap Ratio": 0.85,
-      "ROIC": 17.86,
-      "Tax Rate": 8.28,
-      "Cost of Debt": 5.78
+      "EV/Sales": 2.45,
+      "Cost of Capital": 6.48,
+      "Beta": 0.61,
+      "Revenue Growth Rate": 3.43,
+      "Operating Margin": 22.79,
+      "Sales Cap Ratio": 0.79,
+      "ROIC": 15.74,
+      "Tax Rate": 12.35,
+      "Cost of Debt": 5.29
     },
     "Beverage (Soft)": {
-      "EV/Sales": 4.0,
-      "Cost of Capital": 6.59,
-      "Beta": 0.5,
-      "Revenue Growth Rate": 16.75,
-      "Operating Margin": 20.13,
-      "Sales Cap Ratio": 1.67,
-      "ROIC": 30.61,
-      "Tax Rate": 6.94,
-      "Cost of Debt": 5.78
+      "EV/Sales": 4.16,
+      "Cost of Capital": 6.33,
+      "Beta": 0.56,
+      "Revenue Growth Rate": 8.58,
+      "Operating Margin": 20.63,
+      "Sales Cap Ratio": 1.54,
+      "ROIC": 29.03,
+      "Tax Rate": 6.85,
+      "Cost of Debt": 5.29
     },
     "Broadcasting": {
-      "EV/Sales": 1.29,
-      "Cost of Capital": 6.03,
-      "Beta": 0.43,
-      "Revenue Growth Rate": 1.89,
-      "Operating Margin": 12.51,
-      "Sales Cap Ratio": 1.14,
-      "ROIC": 12.68,
-      "Tax Rate": 10.74,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.4,
+      "Cost of Capital": 5.09,
+      "Beta": 0.29,
+      "Revenue Growth Rate": 8.41,
+      "Operating Margin": 12.35,
+      "Sales Cap Ratio": 1.28,
+      "ROIC": 14.57,
+      "Tax Rate": 7.73,
+      "Cost of Debt": 5.29
     },
     "Brokerage & Investment Banking": {
-      "EV/Sales": null,
-      "Cost of Capital": 5.74,
-      "Beta": 0.4,
-      "Revenue Growth Rate": 22.19,
-      "Operating Margin": null,
-      "Sales Cap Ratio": null,
+      "EV/Sales": 5.78,
+      "Cost of Capital": 6.08,
+      "Beta": 0.58,
+      "Revenue Growth Rate": 35.52,
+      "Operating Margin": -0.12,
+      "Sales Cap Ratio": 0.27,
       "ROIC": null,
-      "Tax Rate": 14.42,
-      "Cost of Debt": 5.53
+      "Tax Rate": 15.27,
+      "Cost of Debt": 5.07
     },
     "Building Materials": {
-      "EV/Sales": 2.33,
-      "Cost of Capital": 9.46,
-      "Beta": 1.19,
-      "Revenue Growth Rate": 4.06,
-      "Operating Margin": 13.5,
-      "Sales Cap Ratio": 2.66,
-      "ROIC": 26.84,
-      "Tax Rate": 19.11,
-      "Cost of Debt": 5.53
+      "EV/Sales": 2.05,
+      "Cost of Capital": 7.85,
+      "Beta": 0.93,
+      "Revenue Growth Rate": 4.14,
+      "Operating Margin": 12.8,
+      "Sales Cap Ratio": 2.06,
+      "ROIC": 20.16,
+      "Tax Rate": 18.02,
+      "Cost of Debt": 5.07
     },
     "Business & Consumer Services": {
-      "EV/Sales": 2.93,
-      "Cost of Capital": 8.27,
-      "Beta": 0.89,
-      "Revenue Growth Rate": 5.24,
-      "Operating Margin": 12.24,
-      "Sales Cap Ratio": 2.66,
-      "ROIC": 26.83,
-      "Tax Rate": 12.48,
-      "Cost of Debt": 5.78
+      "EV/Sales": 2.53,
+      "Cost of Capital": 7.23,
+      "Beta": 0.77,
+      "Revenue Growth Rate": 5.8,
+      "Operating Margin": 12.32,
+      "Sales Cap Ratio": 2.8,
+      "ROIC": 28.3,
+      "Tax Rate": 10.38,
+      "Cost of Debt": 5.07
     },
     "Cable TV": {
-      "EV/Sales": 2.27,
-      "Cost of Capital": 6.28,
-      "Beta": 0.49,
-      "Revenue Growth Rate": 24.15,
-      "Operating Margin": 18.17,
-      "Sales Cap Ratio": 0.85,
-      "ROIC": 13.75,
-      "Tax Rate": 10.47,
-      "Cost of Debt": 5.78
+      "EV/Sales": 2.06,
+      "Cost of Capital": 5.2,
+      "Beta": 0.35,
+      "Revenue Growth Rate": 26.94,
+      "Operating Margin": 18.24,
+      "Sales Cap Ratio": 0.74,
+      "ROIC": 12.06,
+      "Tax Rate": 10.64,
+      "Cost of Debt": 5.07
     },
     "Chemical (Basic)": {
-      "EV/Sales": 1.03,
-      "Cost of Capital": 7.63,
-      "Beta": 0.8,
-      "Revenue Growth Rate": 8.67,
-      "Operating Margin": 6.25,
-      "Sales Cap Ratio": 1.59,
-      "ROIC": 8.71,
-      "Tax Rate": 7.97,
-      "Cost of Debt": 5.78
+      "EV/Sales": 0.85,
+      "Cost of Capital": 6.22,
+      "Beta": 0.58,
+      "Revenue Growth Rate": 13.88,
+      "Operating Margin": 2.86,
+      "Sales Cap Ratio": 1.49,
+      "ROIC": 3.72,
+      "Tax Rate": 7.68,
+      "Cost of Debt": 5.29
     },
     "Chemical (Diversified)": {
-      "EV/Sales": 1.0,
-      "Cost of Capital": 6.47,
-      "Beta": 0.54,
-      "Revenue Growth Rate": 1.67,
-      "Operating Margin": 4.48,
-      "Sales Cap Ratio": 1.31,
-      "ROIC": 5.35,
+      "EV/Sales": 0.84,
+      "Cost of Capital": 5.23,
+      "Beta": 0.37,
+      "Revenue Growth Rate": 1.44,
+      "Operating Margin": 3.41,
+      "Sales Cap Ratio": 1.27,
+      "ROIC": 4.05,
       "Tax Rate": 0.0,
-      "Cost of Debt": 5.78
+      "Cost of Debt": 5.07
     },
     "Chemical (Specialty)": {
-      "EV/Sales": 2.77,
-      "Cost of Capital": 7.67,
-      "Beta": 0.76,
-      "Revenue Growth Rate": 9.19,
-      "Operating Margin": 12.17,
-      "Sales Cap Ratio": 1.13,
-      "ROIC": 11.31,
-      "Tax Rate": 9.99,
-      "Cost of Debt": 5.78
+      "EV/Sales": 2.65,
+      "Cost of Capital": 7.25,
+      "Beta": 0.79,
+      "Revenue Growth Rate": 8.04,
+      "Operating Margin": 12.41,
+      "Sales Cap Ratio": 1.11,
+      "ROIC": 10.95,
+      "Tax Rate": 13.68,
+      "Cost of Debt": 5.07
     },
     "Coal & Related Energy": {
-      "EV/Sales": 1.57,
-      "Cost of Capital": 9.23,
-      "Beta": 1.1,
-      "Revenue Growth Rate": 0.65,
-      "Operating Margin": 11.11,
-      "Sales Cap Ratio": 1.24,
-      "ROIC": 13.14,
-      "Tax Rate": 2.77,
-      "Cost of Debt": 5.78
+      "EV/Sales": 2.54,
+      "Cost of Capital": 8.41,
+      "Beta": 1.02,
+      "Revenue Growth Rate": 19.24,
+      "Operating Margin": -3.82,
+      "Sales Cap Ratio": 1.29,
+      "ROIC": -4.76,
+      "Tax Rate": 3.13,
+      "Cost of Debt": 5.29
     },
     "Computer Services": {
-      "EV/Sales": 1.38,
-      "Cost of Capital": 8.72,
-      "Beta": 1.03,
-      "Revenue Growth Rate": 9.34,
-      "Operating Margin": 6.31,
-      "Sales Cap Ratio": 4.71,
-      "ROIC": 20.51,
-      "Tax Rate": 10.78,
-      "Cost of Debt": 5.53
+      "EV/Sales": 1.48,
+      "Cost of Capital": 7.83,
+      "Beta": 0.92,
+      "Revenue Growth Rate": 27.1,
+      "Operating Margin": 7.63,
+      "Sales Cap Ratio": 5.19,
+      "ROIC": 26.35,
+      "Tax Rate": 10.53,
+      "Cost of Debt": 5.29
     },
     "Computers/Peripherals": {
-      "EV/Sales": 6.68,
-      "Cost of Capital": 9.29,
-      "Beta": 1.1,
-      "Revenue Growth Rate": 3.55,
-      "Operating Margin": 22.67,
-      "Sales Cap Ratio": 3.34,
-      "ROIC": 41.41,
-      "Tax Rate": 8.99,
-      "Cost of Debt": 5.78
+      "EV/Sales": 6.63,
+      "Cost of Capital": 9.71,
+      "Beta": 1.31,
+      "Revenue Growth Rate": 6.71,
+      "Operating Margin": 22.49,
+      "Sales Cap Ratio": 3.62,
+      "ROIC": 44.76,
+      "Tax Rate": 5.91,
+      "Cost of Debt": 5.29
     },
     "Construction Supplies": {
-      "EV/Sales": 2.46,
-      "Cost of Capital": 9.14,
-      "Beta": 1.11,
-      "Revenue Growth Rate": 3.75,
-      "Operating Margin": 15.19,
-      "Sales Cap Ratio": 1.56,
-      "ROIC": 18.41,
-      "Tax Rate": 13.55,
-      "Cost of Debt": 5.78
+      "EV/Sales": 3.23,
+      "Cost of Capital": 8.29,
+      "Beta": 1.02,
+      "Revenue Growth Rate": 13.7,
+      "Operating Margin": 15.27,
+      "Sales Cap Ratio": 1.45,
+      "ROIC": 16.71,
+      "Tax Rate": 16.04,
+      "Cost of Debt": 5.07
     },
     "Diversified": {
-      "EV/Sales": 2.91,
-      "Cost of Capital": 8.61,
-      "Beta": 0.97,
-      "Revenue Growth Rate": 11.62,
-      "Operating Margin": 32.97,
-      "Sales Cap Ratio": 0.8,
-      "ROIC": 24.65,
-      "Tax Rate": 5.01,
-      "Cost of Debt": 5.78
+      "EV/Sales": 3.08,
+      "Cost of Capital": 7.3,
+      "Beta": 0.79,
+      "Revenue Growth Rate": 8.9,
+      "Operating Margin": 22.82,
+      "Sales Cap Ratio": 0.68,
+      "ROIC": 14.82,
+      "Tax Rate": 2.76,
+      "Cost of Debt": 4.73
     },
     "Drugs (Biotechnology)": {
-      "EV/Sales": 6.79,
-      "Cost of Capital": 9.37,
-      "Beta": 1.11,
-      "Revenue Growth Rate": 23.77,
-      "Operating Margin": 1.3,
-      "Sales Cap Ratio": 0.93,
-      "ROIC": 3.08,
-      "Tax Rate": 1.05,
-      "Cost of Debt": 7.58
+      "EV/Sales": 7.92,
+      "Cost of Capital": 8.49,
+      "Beta": 1.03,
+      "Revenue Growth Rate": 28.93,
+      "Operating Margin": 8.76,
+      "Sales Cap Ratio": 0.82,
+      "ROIC": 3.53,
+      "Tax Rate": 1.08,
+      "Cost of Debt": 6.02
     },
     "Drugs (Pharmaceutical)": {
-      "EV/Sales": 5.48,
-      "Cost of Capital": 8.72,
-      "Beta": 0.95,
-      "Revenue Growth Rate": 24.78,
-      "Operating Margin": 22.8,
-      "Sales Cap Ratio": 1.01,
-      "ROIC": 14.08,
-      "Tax Rate": 2.58,
-      "Cost of Debt": 7.58
+      "EV/Sales": 6.24,
+      "Cost of Capital": 7.85,
+      "Beta": 0.89,
+      "Revenue Growth Rate": 18.45,
+      "Operating Margin": 29.54,
+      "Sales Cap Ratio": 1.11,
+      "ROIC": 16.95,
+      "Tax Rate": 2.99,
+      "Cost of Debt": 6.02
     },
     "Education": {
-      "EV/Sales": 2.49,
-      "Cost of Capital": 8.1,
-      "Beta": 0.86,
-      "Revenue Growth Rate": 4.77,
-      "Operating Margin": 8.41,
-      "Sales Cap Ratio": 1.86,
-      "ROIC": 11.86,
-      "Tax Rate": 11.89,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.99,
+      "Cost of Capital": 6.75,
+      "Beta": 0.66,
+      "Revenue Growth Rate": 7.74,
+      "Operating Margin": 13.54,
+      "Sales Cap Ratio": 1.63,
+      "ROIC": 15.94,
+      "Tax Rate": 15.54,
+      "Cost of Debt": 5.29
     },
     "Electrical Equipment": {
-      "EV/Sales": 3.31,
-      "Cost of Capital": 9.4,
-      "Beta": 1.14,
-      "Revenue Growth Rate": 13.29,
-      "Operating Margin": 7.38,
-      "Sales Cap Ratio": 2.09,
-      "ROIC": 12.23,
-      "Tax Rate": 5.14,
-      "Cost of Debt": 6.41
+      "EV/Sales": 4.42,
+      "Cost of Capital": 8.99,
+      "Beta": 1.15,
+      "Revenue Growth Rate": 19.17,
+      "Operating Margin": 9.75,
+      "Sales Cap Ratio": 2.03,
+      "ROIC": 15.6,
+      "Tax Rate": 4.82,
+      "Cost of Debt": 6.02
     },
     "Electronics (Consumer & Office)": {
-      "EV/Sales": 0.72,
-      "Cost of Capital": 8.12,
-      "Beta": 0.84,
-      "Revenue Growth Rate": -7.0,
-      "Operating Margin": -5.2,
-      "Sales Cap Ratio": 2.74,
-      "ROIC": -5.81,
+      "EV/Sales": 0.91,
+      "Cost of Capital": 7.63,
+      "Beta": 0.83,
+      "Revenue Growth Rate": -3.49,
+      "Operating Margin": -4.25,
+      "Sales Cap Ratio": 5.57,
+      "ROIC": -8.35,
       "Tax Rate": 0.0,
-      "Cost of Debt": 6.41
+      "Cost of Debt": 6.02
     },
     "Electronics (General)": {
-      "EV/Sales": 2.46,
-      "Cost of Capital": 8.55,
-      "Beta": 0.96,
-      "Revenue Growth Rate": 10.59,
-      "Operating Margin": 8.27,
-      "Sales Cap Ratio": 2.17,
-      "ROIC": 13.11,
-      "Tax Rate": 6.59,
-      "Cost of Debt": 5.78
+      "EV/Sales": 3.21,
+      "Cost of Capital": 7.85,
+      "Beta": 0.9,
+      "Revenue Growth Rate": 7.27,
+      "Operating Margin": 10.52,
+      "Sales Cap Ratio": 2.38,
+      "ROIC": 17.91,
+      "Tax Rate": 8.04,
+      "Cost of Debt": 5.29
     },
     "Engineering/Construction": {
-      "EV/Sales": 1.41,
-      "Cost of Capital": 8.17,
-      "Beta": 0.87,
-      "Revenue Growth Rate": 8.65,
-      "Operating Margin": 5.84,
-      "Sales Cap Ratio": 3.86,
-      "ROIC": 19.16,
-      "Tax Rate": 14.71,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.74,
+      "Cost of Capital": 8.69,
+      "Beta": 1.09,
+      "Revenue Growth Rate": 11.7,
+      "Operating Margin": 6.75,
+      "Sales Cap Ratio": 4.36,
+      "ROIC": 25.32,
+      "Tax Rate": 13.64,
+      "Cost of Debt": 5.29
     },
     "Entertainment": {
-      "EV/Sales": 3.9,
-      "Cost of Capital": 8.28,
-      "Beta": 0.9,
-      "Revenue Growth Rate": 13.25,
-      "Operating Margin": 8.13,
-      "Sales Cap Ratio": 1.41,
-      "ROIC": 9.94,
-      "Tax Rate": 2.06,
-      "Cost of Debt": 5.78
+      "EV/Sales": 4.33,
+      "Cost of Capital": 7.13,
+      "Beta": 0.74,
+      "Revenue Growth Rate": 16.43,
+      "Operating Margin": 10.38,
+      "Sales Cap Ratio": 1.39,
+      "ROIC": 12.42,
+      "Tax Rate": 3.3,
+      "Cost of Debt": 5.29
     },
     "Environmental & Waste Services": {
-      "EV/Sales": 3.68,
-      "Cost of Capital": 7.88,
-      "Beta": 0.8,
-      "Revenue Growth Rate": 19.64,
-      "Operating Margin": 15.08,
-      "Sales Cap Ratio": 2.32,
-      "ROIC": 31.72,
-      "Tax Rate": 6.84,
-      "Cost of Debt": 5.78
+      "EV/Sales": 3.7,
+      "Cost of Capital": 7.43,
+      "Beta": 0.81,
+      "Revenue Growth Rate": 21.7,
+      "Operating Margin": 14.85,
+      "Sales Cap Ratio": 2.3,
+      "ROIC": 31.75,
+      "Tax Rate": 4.27,
+      "Cost of Debt": 5.29
     },
     "Farming/Agriculture": {
-      "EV/Sales": 1.18,
-      "Cost of Capital": 7.43,
-      "Beta": 0.7,
-      "Revenue Growth Rate": 22.23,
-      "Operating Margin": 7.42,
-      "Sales Cap Ratio": 1.57,
-      "ROIC": 9.97,
-      "Tax Rate": 8.89,
-      "Cost of Debt": 6.41
+      "EV/Sales": 1.34,
+      "Cost of Capital": 7.27,
+      "Beta": 0.81,
+      "Revenue Growth Rate": 14.02,
+      "Operating Margin": 5.61,
+      "Sales Cap Ratio": 1.48,
+      "ROIC": 7.28,
+      "Tax Rate": 6.29,
+      "Cost of Debt": 5.29
     },
     "Financial Svcs. (Non-bank & Insurance)": {
-      "EV/Sales": 19.3,
-      "Cost of Capital": 5.46,
-      "Beta": 0.34,
-      "Revenue Growth Rate": 14.79,
-      "Operating Margin": 16.41,
+      "EV/Sales": 18.91,
+      "Cost of Capital": 5.0,
+      "Beta": 0.32,
+      "Revenue Growth Rate": 11.3,
+      "Operating Margin": 18.54,
       "Sales Cap Ratio": 0.07,
       "ROIC": null,
-      "Tax Rate": 11.81,
-      "Cost of Debt": 5.53
+      "Tax Rate": 12.06,
+      "Cost of Debt": 5.07
     },
     "Food Processing": {
-      "EV/Sales": 1.79,
-      "Cost of Capital": 6.02,
-      "Beta": 0.37,
-      "Revenue Growth Rate": 10.02,
-      "Operating Margin": 12.1,
-      "Sales Cap Ratio": 1.7,
-      "ROIC": 17.9,
-      "Tax Rate": 10.12,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.47,
+      "Cost of Capital": 5.79,
+      "Beta": 0.46,
+      "Revenue Growth Rate": 7.16,
+      "Operating Margin": 10.77,
+      "Sales Cap Ratio": 1.71,
+      "ROIC": 15.95,
+      "Tax Rate": 10.37,
+      "Cost of Debt": 5.07
     },
     "Food Wholesalers": {
-      "EV/Sales": 0.44,
-      "Cost of Capital": 6.64,
-      "Beta": 0.54,
-      "Revenue Growth Rate": 11.9,
-      "Operating Margin": 2.63,
-      "Sales Cap Ratio": 7.78,
-      "ROIC": 17.3,
-      "Tax Rate": 15.53,
-      "Cost of Debt": 5.53
+      "EV/Sales": 0.46,
+      "Cost of Capital": 6.53,
+      "Beta": 0.64,
+      "Revenue Growth Rate": 13.28,
+      "Operating Margin": 2.55,
+      "Sales Cap Ratio": 7.71,
+      "ROIC": 17.84,
+      "Tax Rate": 9.15,
+      "Cost of Debt": 5.07
     },
     "Furn/Home Furnishings": {
-      "EV/Sales": 1.18,
-      "Cost of Capital": 7.15,
-      "Beta": 0.66,
-      "Revenue Growth Rate": -0.28,
-      "Operating Margin": 6.79,
+      "EV/Sales": 1.33,
+      "Cost of Capital": 6.53,
+      "Beta": 0.62,
+      "Revenue Growth Rate": 0.99,
+      "Operating Margin": 6.88,
       "Sales Cap Ratio": 1.96,
-      "ROIC": 10.65,
-      "Tax Rate": 11.61,
-      "Cost of Debt": 5.78
+      "ROIC": 10.59,
+      "Tax Rate": 11.38,
+      "Cost of Debt": 5.29
     },
     "Green & Renewable Energy": {
-      "EV/Sales": 6.38,
-      "Cost of Capital": 6.5,
-      "Beta": 0.49,
-      "Revenue Growth Rate": 15.73,
-      "Operating Margin": 19.78,
-      "Sales Cap Ratio": 0.19,
-      "ROIC": 3.67,
-      "Tax Rate": 1.22,
-      "Cost of Debt": 6.41
+      "EV/Sales": 7.87,
+      "Cost of Capital": 6.04,
+      "Beta": 0.46,
+      "Revenue Growth Rate": 17.1,
+      "Operating Margin": 18.39,
+      "Sales Cap Ratio": 0.2,
+      "ROIC": 3.64,
+      "Tax Rate": 0.0,
+      "Cost of Debt": 6.02
     },
     "Healthcare Products": {
-      "EV/Sales": 5.2,
-      "Cost of Capital": 8.5,
-      "Beta": 0.92,
-      "Revenue Growth Rate": 14.61,
-      "Operating Margin": 14.99,
-      "Sales Cap Ratio": 1.33,
-      "ROIC": 14.71,
-      "Tax Rate": 4.1,
-      "Cost of Debt": 6.41
+      "EV/Sales": 4.76,
+      "Cost of Capital": 7.54,
+      "Beta": 0.83,
+      "Revenue Growth Rate": 18.41,
+      "Operating Margin": 15.47,
+      "Sales Cap Ratio": 1.48,
+      "ROIC": 16.98,
+      "Tax Rate": 4.85,
+      "Cost of Debt": 5.29
     },
     "Healthcare Support Services": {
-      "EV/Sales": 0.53,
-      "Cost of Capital": 7.6,
-      "Beta": 0.76,
-      "Revenue Growth Rate": 11.34,
-      "Operating Margin": 3.43,
-      "Sales Cap Ratio": 14.65,
-      "ROIC": 44.6,
-      "Tax Rate": 8.8,
-      "Cost of Debt": 5.78
+      "EV/Sales": 0.46,
+      "Cost of Capital": 6.83,
+      "Beta": 0.69,
+      "Revenue Growth Rate": 13.12,
+      "Operating Margin": 2.99,
+      "Sales Cap Ratio": 11.75,
+      "ROIC": 31.19,
+      "Tax Rate": 9.8,
+      "Cost of Debt": 5.29
     },
     "Heathcare Information and Technology": {
       "EV/Sales": 5.31,
-      "Cost of Capital": 9.1,
-      "Beta": 1.09,
-      "Revenue Growth Rate": 14.73,
-      "Operating Margin": 13.4,
-      "Sales Cap Ratio": 1.22,
-      "ROIC": 12.74,
-      "Tax Rate": 3.82,
-      "Cost of Debt": 5.78
+      "Cost of Capital": 8.22,
+      "Beta": 0.99,
+      "Revenue Growth Rate": 15.57,
+      "Operating Margin": 14.75,
+      "Sales Cap Ratio": 1.25,
+      "ROIC": 13.72,
+      "Tax Rate": 6.38,
+      "Cost of Debt": 5.29
     },
     "Homebuilding": {
-      "EV/Sales": 1.24,
-      "Cost of Capital": 9.78,
-      "Beta": 1.26,
-      "Revenue Growth Rate": 9.0,
-      "Operating Margin": 15.59,
-      "Sales Cap Ratio": 1.64,
-      "ROIC": 21.05,
-      "Tax Rate": 17.73,
-      "Cost of Debt": 5.53
+      "EV/Sales": 1.19,
+      "Cost of Capital": 7.27,
+      "Beta": 0.78,
+      "Revenue Growth Rate": 9.87,
+      "Operating Margin": 12.63,
+      "Sales Cap Ratio": 1.42,
+      "ROIC": 14.91,
+      "Tax Rate": 16.99,
+      "Cost of Debt": 5.07
     },
     "Hospitals/Healthcare Facilities": {
-      "EV/Sales": 1.48,
-      "Cost of Capital": 6.57,
-      "Beta": 0.54,
-      "Revenue Growth Rate": 1.57,
-      "Operating Margin": 12.14,
-      "Sales Cap Ratio": 1.92,
-      "ROIC": 21.19,
-      "Tax Rate": 9.05,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.69,
+      "Cost of Capital": 6.19,
+      "Beta": 0.55,
+      "Revenue Growth Rate": 15.94,
+      "Operating Margin": 12.86,
+      "Sales Cap Ratio": 1.95,
+      "ROIC": 22.16,
+      "Tax Rate": 11.35,
+      "Cost of Debt": 5.29
     },
     "Hotel/Gaming": {
-      "EV/Sales": 4.28,
-      "Cost of Capital": 8.12,
-      "Beta": 0.9,
-      "Revenue Growth Rate": 11.9,
-      "Operating Margin": 14.85,
-      "Sales Cap Ratio": 0.98,
-      "ROIC": 12.17,
-      "Tax Rate": 10.65,
-      "Cost of Debt": 5.78
+      "EV/Sales": 4.33,
+      "Cost of Capital": 7.36,
+      "Beta": 0.83,
+      "Revenue Growth Rate": 21.82,
+      "Operating Margin": 16.44,
+      "Sales Cap Ratio": 1.04,
+      "ROIC": 14.58,
+      "Tax Rate": 8.31,
+      "Cost of Debt": 5.07
     },
     "Household Products": {
-      "EV/Sales": 3.53,
-      "Cost of Capital": 7.91,
-      "Beta": 0.81,
-      "Revenue Growth Rate": 3.15,
-      "Operating Margin": 18.53,
-      "Sales Cap Ratio": 2.22,
-      "ROIC": 33.56,
-      "Tax Rate": 8.0,
-      "Cost of Debt": 5.78
+      "EV/Sales": 3.06,
+      "Cost of Capital": 7.03,
+      "Beta": 0.72,
+      "Revenue Growth Rate": 8.09,
+      "Operating Margin": 18.79,
+      "Sales Cap Ratio": 2.21,
+      "ROIC": 34.42,
+      "Tax Rate": 6.5,
+      "Cost of Debt": 5.29
     },
     "Information Services": {
-      "EV/Sales": 2.27,
-      "Cost of Capital": 7.62,
-      "Beta": 0.77,
-      "Revenue Growth Rate": 2.53,
-      "Operating Margin": 12.15,
-      "Sales Cap Ratio": 2.73,
-      "ROIC": 24.55,
-      "Tax Rate": 15.37,
-      "Cost of Debt": 5.53
+      "EV/Sales": 2.21,
+      "Cost of Capital": 7.0,
+      "Beta": 0.74,
+      "Revenue Growth Rate": 6.77,
+      "Operating Margin": 12.45,
+      "Sales Cap Ratio": 2.51,
+      "ROIC": 22.17,
+      "Tax Rate": 18.16,
+      "Cost of Debt": 5.07
     },
     "Insurance (General)": {
-      "EV/Sales": 3.11,
-      "Cost of Capital": 7.35,
-      "Beta": 0.67,
-      "Revenue Growth Rate": 12.98,
-      "Operating Margin": 16.49,
-      "Sales Cap Ratio": 1.16,
-      "ROIC": 17.45,
-      "Tax Rate": 8.78,
-      "Cost of Debt": 5.78
+      "EV/Sales": 4.32,
+      "Cost of Capital": 6.34,
+      "Beta": 0.56,
+      "Revenue Growth Rate": 11.83,
+      "Operating Margin": 21.46,
+      "Sales Cap Ratio": 2.41,
+      "ROIC": 44.51,
+      "Tax Rate": 12.77,
+      "Cost of Debt": 5.29
     },
     "Insurance (Life)": {
-      "EV/Sales": 1.24,
-      "Cost of Capital": 6.36,
-      "Beta": 0.5,
-      "Revenue Growth Rate": 3.7,
-      "Operating Margin": 8.25,
-      "Sales Cap Ratio": 0.99,
-      "ROIC": 6.96,
-      "Tax Rate": 14.51,
-      "Cost of Debt": 5.53
+      "EV/Sales": 1.28,
+      "Cost of Capital": 5.6,
+      "Beta": 0.43,
+      "Revenue Growth Rate": 2.52,
+      "Operating Margin": 10.65,
+      "Sales Cap Ratio": 1.19,
+      "ROIC": 10.77,
+      "Tax Rate": 15.19,
+      "Cost of Debt": 5.07
     },
     "Insurance (Prop/Cas.)": {
-      "EV/Sales": 1.51,
-      "Cost of Capital": 6.79,
-      "Beta": 0.55,
-      "Revenue Growth Rate": 9.12,
-      "Operating Margin": 13.7,
-      "Sales Cap Ratio": 1.91,
-      "ROIC": 21.99,
-      "Tax Rate": 16.05,
-      "Cost of Debt": 5.53
+      "EV/Sales": 1.49,
+      "Cost of Capital": 5.78,
+      "Beta": 0.44,
+      "Revenue Growth Rate": 8.76,
+      "Operating Margin": 15.3,
+      "Sales Cap Ratio": 1.48,
+      "ROIC": 18.49,
+      "Tax Rate": 18.37,
+      "Cost of Debt": 4.73
     },
     "Investments & Asset Management": {
-      "EV/Sales": 6.01,
-      "Cost of Capital": 6.2,
-      "Beta": 0.45,
-      "Revenue Growth Rate": 8.37,
-      "Operating Margin": 14.08,
-      "Sales Cap Ratio": 0.52,
-      "ROIC": 6.8,
-      "Tax Rate": 6.19,
-      "Cost of Debt": 5.08
+      "EV/Sales": 5.49,
+      "Cost of Capital": 6.13,
+      "Beta": 0.53,
+      "Revenue Growth Rate": 5.69,
+      "Operating Margin": 25.18,
+      "Sales Cap Ratio": 0.59,
+      "ROIC": 14.25,
+      "Tax Rate": 3.53,
+      "Cost of Debt": 5.07
     },
     "Machinery": {
-      "EV/Sales": 3.23,
-      "Cost of Capital": 8.54,
-      "Beta": 0.96,
-      "Revenue Growth Rate": 6.23,
-      "Operating Margin": 15.98,
-      "Sales Cap Ratio": 1.97,
-      "ROIC": 24.76,
-      "Tax Rate": 11.22,
-      "Cost of Debt": 5.78
+      "EV/Sales": 3.43,
+      "Cost of Capital": 7.7,
+      "Beta": 0.87,
+      "Revenue Growth Rate": 10.37,
+      "Operating Margin": 16.06,
+      "Sales Cap Ratio": 1.95,
+      "ROIC": 24.41,
+      "Tax Rate": 13.37,
+      "Cost of Debt": 5.29
     },
     "Metals & Mining": {
-      "EV/Sales": 2.89,
-      "Cost of Capital": 8.4,
-      "Beta": 0.91,
-      "Revenue Growth Rate": 1.84,
-      "Operating Margin": 22.62,
-      "Sales Cap Ratio": 1.23,
-      "ROIC": 27.13,
-      "Tax Rate": 1.8,
-      "Cost of Debt": 6.41
+      "EV/Sales": 4.03,
+      "Cost of Capital": 8.2,
+      "Beta": 0.96,
+      "Revenue Growth Rate": 8.67,
+      "Operating Margin": 23.76,
+      "Sales Cap Ratio": 1.18,
+      "ROIC": 27.04,
+      "Tax Rate": 2.52,
+      "Cost of Debt": 6.02
     },
     "Office Equipment & Services": {
-      "EV/Sales": 1.2,
-      "Cost of Capital": 8.05,
-      "Beta": 0.89,
-      "Revenue Growth Rate": 14.15,
-      "Operating Margin": 8.46,
-      "Sales Cap Ratio": 2.33,
-      "ROIC": 15.0,
-      "Tax Rate": 13.45,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.43,
+      "Cost of Capital": 7.92,
+      "Beta": 0.98,
+      "Revenue Growth Rate": 8.13,
+      "Operating Margin": 10.88,
+      "Sales Cap Ratio": 2.21,
+      "ROIC": 18.26,
+      "Tax Rate": 12.3,
+      "Cost of Debt": 5.07
     },
     "Oil/Gas (Integrated)": {
-      "EV/Sales": 1.52,
-      "Cost of Capital": 6.33,
-      "Beta": 0.44,
-      "Revenue Growth Rate": 0.2,
-      "Operating Margin": 13.71,
-      "Sales Cap Ratio": 1.27,
-      "ROIC": 12.9,
-      "Tax Rate": 25.23,
-      "Cost of Debt": 5.08
+      "EV/Sales": 1.75,
+      "Cost of Capital": 5.07,
+      "Beta": 0.27,
+      "Revenue Growth Rate": 4.62,
+      "Operating Margin": 11.57,
+      "Sales Cap Ratio": 1.02,
+      "ROIC": 8.45,
+      "Tax Rate": 28.24,
+      "Cost of Debt": 4.73
     },
     "Oil/Gas (Production and Exploration)": {
-      "EV/Sales": 3.08,
-      "Cost of Capital": 7.52,
-      "Beta": 0.73,
-      "Revenue Growth Rate": 5.35,
-      "Operating Margin": 30.06,
-      "Sales Cap Ratio": 0.67,
-      "ROIC": 18.62,
-      "Tax Rate": 7.1,
-      "Cost of Debt": 5.78
+      "EV/Sales": 2.68,
+      "Cost of Capital": 6.25,
+      "Beta": 0.56,
+      "Revenue Growth Rate": 17.61,
+      "Operating Margin": 25.82,
+      "Sales Cap Ratio": 0.57,
+      "ROIC": 13.73,
+      "Tax Rate": 6.66,
+      "Cost of Debt": 5.07
     },
     "Oil/Gas Distribution": {
-      "EV/Sales": 4.98,
-      "Cost of Capital": 6.59,
-      "Beta": 0.54,
-      "Revenue Growth Rate": 19.87,
-      "Operating Margin": 28.45,
-      "Sales Cap Ratio": 0.49,
-      "ROIC": 12.18,
-      "Tax Rate": 12.48,
-      "Cost of Debt": 5.53
+      "EV/Sales": 4.37,
+      "Cost of Capital": 5.78,
+      "Beta": 0.47,
+      "Revenue Growth Rate": 20.13,
+      "Operating Margin": 26.06,
+      "Sales Cap Ratio": 0.52,
+      "ROIC": 12.35,
+      "Tax Rate": 9.17,
+      "Cost of Debt": 5.07
     },
     "Oilfield Svcs/Equip.": {
-      "EV/Sales": 0.61,
-      "Cost of Capital": 7.44,
-      "Beta": 0.73,
-      "Revenue Growth Rate": 5.25,
-      "Operating Margin": 5.17,
-      "Sales Cap Ratio": 3.13,
-      "ROIC": 14.37,
-      "Tax Rate": 9.08,
-      "Cost of Debt": 5.78
+      "EV/Sales": 0.74,
+      "Cost of Capital": 7.04,
+      "Beta": 0.74,
+      "Revenue Growth Rate": 10.79,
+      "Operating Margin": 4.85,
+      "Sales Cap Ratio": 2.79,
+      "ROIC": 11.94,
+      "Tax Rate": 8.75,
+      "Cost of Debt": 5.29
     },
     "Packaging & Container": {
-      "EV/Sales": 1.54,
-      "Cost of Capital": 7.2,
-      "Beta": 0.7,
-      "Revenue Growth Rate": 4.02,
-      "Operating Margin": 9.99,
-      "Sales Cap Ratio": 1.74,
-      "ROIC": 14.49,
-      "Tax Rate": 14.29,
-      "Cost of Debt": 5.53
+      "EV/Sales": 1.55,
+      "Cost of Capital": 6.75,
+      "Beta": 0.72,
+      "Revenue Growth Rate": 4.66,
+      "Operating Margin": 9.79,
+      "Sales Cap Ratio": 1.84,
+      "ROIC": 14.82,
+      "Tax Rate": 15.57,
+      "Cost of Debt": 4.73
     },
     "Paper/Forest Products": {
-      "EV/Sales": 1.23,
-      "Cost of Capital": 8.32,
-      "Beta": 0.92,
-      "Revenue Growth Rate": 4.54,
-      "Operating Margin": 10.31,
-      "Sales Cap Ratio": 2.47,
-      "ROIC": 19.42,
-      "Tax Rate": 23.69,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.02,
+      "Cost of Capital": 6.93,
+      "Beta": 0.72,
+      "Revenue Growth Rate": -0.34,
+      "Operating Margin": 6.58,
+      "Sales Cap Ratio": 1.73,
+      "ROIC": 10.41,
+      "Tax Rate": 8.6,
+      "Cost of Debt": 5.29
     },
     "Power": {
-      "EV/Sales": 4.33,
-      "Cost of Capital": 5.54,
-      "Beta": 0.34,
-      "Revenue Growth Rate": 5.06,
-      "Operating Margin": 19.67,
-      "Sales Cap Ratio": 0.38,
-      "ROIC": 6.56,
-      "Tax Rate": 12.11,
-      "Cost of Debt": 5.08
+      "EV/Sales": 4.7,
+      "Cost of Capital": 5.01,
+      "Beta": 0.31,
+      "Revenue Growth Rate": 6.74,
+      "Operating Margin": 21.36,
+      "Sales Cap Ratio": 0.37,
+      "ROIC": 6.92,
+      "Tax Rate": 12.75,
+      "Cost of Debt": 4.73
     },
     "Precious Metals": {
-      "EV/Sales": 3.06,
-      "Cost of Capital": 9.09,
-      "Beta": 1.08,
-      "Revenue Growth Rate": 4.47,
-      "Operating Margin": 18.89,
-      "Sales Cap Ratio": 0.71,
-      "ROIC": 12.93,
-      "Tax Rate": 1.99,
-      "Cost of Debt": 6.41
+      "EV/Sales": 5.98,
+      "Cost of Capital": 7.47,
+      "Beta": 0.79,
+      "Revenue Growth Rate": 46.05,
+      "Operating Margin": 40.43,
+      "Sales Cap Ratio": 0.68,
+      "ROIC": 25.45,
+      "Tax Rate": 5.97,
+      "Cost of Debt": 6.02
     },
     "Publishing & Newspapers": {
-      "EV/Sales": 1.59,
-      "Cost of Capital": 6.63,
-      "Beta": 0.53,
-      "Revenue Growth Rate": 1.5,
-      "Operating Margin": 8.23,
-      "Sales Cap Ratio": 2.26,
-      "ROIC": 15.53,
-      "Tax Rate": 9.76,
-      "Cost of Debt": 5.53
+      "EV/Sales": 1.7,
+      "Cost of Capital": 5.95,
+      "Beta": 0.48,
+      "Revenue Growth Rate": 0.04,
+      "Operating Margin": 9.84,
+      "Sales Cap Ratio": 2.16,
+      "ROIC": 17.63,
+      "Tax Rate": 10.21,
+      "Cost of Debt": 5.07
     },
     "R.E.I.T.": {
-      "EV/Sales": 10.83,
-      "Cost of Capital": 6.62,
-      "Beta": 0.58,
-      "Revenue Growth Rate": 7.06,
-      "Operating Margin": 22.23,
-      "Sales Cap Ratio": 0.14,
-      "ROIC": 3.09,
-      "Tax Rate": 1.8,
-      "Cost of Debt": 5.53
+      "EV/Sales": 10.65,
+      "Cost of Capital": 5.32,
+      "Beta": 0.39,
+      "Revenue Growth Rate": 12.59,
+      "Operating Margin": 22.21,
+      "Sales Cap Ratio": 0.15,
+      "ROIC": 3.2,
+      "Tax Rate": 1.58,
+      "Cost of Debt": 4.73
     },
     "Real Estate (Development)": {
-      "EV/Sales": 3.96,
-      "Cost of Capital": 6.58,
-      "Beta": 0.57,
-      "Revenue Growth Rate": 15.1,
-      "Operating Margin": 13.48,
-      "Sales Cap Ratio": 0.28,
-      "ROIC": 3.73,
-      "Tax Rate": 2.49,
-      "Cost of Debt": 5.78
+      "EV/Sales": 3.03,
+      "Cost of Capital": 5.82,
+      "Beta": 0.48,
+      "Revenue Growth Rate": 28.61,
+      "Operating Margin": 21.19,
+      "Sales Cap Ratio": 0.35,
+      "ROIC": 7.04,
+      "Tax Rate": 4.91,
+      "Cost of Debt": 5.29
     },
     "Real Estate (General/Diversified)": {
-      "EV/Sales": 4.1,
-      "Cost of Capital": 6.99,
-      "Beta": 0.65,
-      "Revenue Growth Rate": 14.35,
-      "Operating Margin": 11.24,
-      "Sales Cap Ratio": 0.37,
-      "ROIC": 3.97,
-      "Tax Rate": 5.45,
-      "Cost of Debt": 5.08
+      "EV/Sales": 6.83,
+      "Cost of Capital": 6.25,
+      "Beta": 0.58,
+      "Revenue Growth Rate": 9.6,
+      "Operating Margin": 22.09,
+      "Sales Cap Ratio": 0.25,
+      "ROIC": 5.19,
+      "Tax Rate": 4.65,
+      "Cost of Debt": 5.07
     },
     "Real Estate (Operations & Services)": {
-      "EV/Sales": 1.53,
-      "Cost of Capital": 8.14,
-      "Beta": 0.89,
-      "Revenue Growth Rate": 4.53,
-      "Operating Margin": 1.36,
-      "Sales Cap Ratio": 2.31,
-      "ROIC": 2.88,
-      "Tax Rate": 4.26,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.46,
+      "Cost of Capital": 7.41,
+      "Beta": 0.81,
+      "Revenue Growth Rate": 12.63,
+      "Operating Margin": 2.76,
+      "Sales Cap Ratio": 2.52,
+      "ROIC": 5.94,
+      "Tax Rate": 8.7,
+      "Cost of Debt": 5.29
     },
     "Recreation": {
-      "EV/Sales": 1.99,
-      "Cost of Capital": 7.97,
-      "Beta": 0.89,
-      "Revenue Growth Rate": 8.77,
-      "Operating Margin": 7.48,
-      "Sales Cap Ratio": 1.29,
-      "ROIC": 7.95,
-      "Tax Rate": 7.33,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.94,
+      "Cost of Capital": 6.76,
+      "Beta": 0.7,
+      "Revenue Growth Rate": 9.14,
+      "Operating Margin": 8.06,
+      "Sales Cap Ratio": 1.24,
+      "ROIC": 8.02,
+      "Tax Rate": 11.45,
+      "Cost of Debt": 5.29
     },
     "Reinsurance": {
-      "EV/Sales": 0.64,
-      "Cost of Capital": 6.08,
-      "Beta": 0.42,
-      "Revenue Growth Rate": 9.66,
-      "Operating Margin": 5.53,
-      "Sales Cap Ratio": 2.24,
-      "ROIC": 9.89,
-      "Tax Rate": 20.13,
-      "Cost of Debt": 5.08
+      "EV/Sales": 0.65,
+      "Cost of Capital": 5.64,
+      "Beta": 0.44,
+      "Revenue Growth Rate": 9.39,
+      "Operating Margin": 7.23,
+      "Sales Cap Ratio": 2.01,
+      "ROIC": 10.14,
+      "Tax Rate": 30.36,
+      "Cost of Debt": 4.73
     },
     "Restaurant/Dining": {
-      "EV/Sales": 4.47,
-      "Cost of Capital": 8.05,
-      "Beta": 0.86,
-      "Revenue Growth Rate": 8.6,
-      "Operating Margin": 13.9,
-      "Sales Cap Ratio": 1.66,
-      "ROIC": 20.39,
-      "Tax Rate": 8.84,
-      "Cost of Debt": 5.53
+      "EV/Sales": 4.17,
+      "Cost of Capital": 7.16,
+      "Beta": 0.77,
+      "Revenue Growth Rate": 13.94,
+      "Operating Margin": 13.79,
+      "Sales Cap Ratio": 1.51,
+      "ROIC": 18.36,
+      "Tax Rate": 9.92,
+      "Cost of Debt": 5.07
     },
     "Retail (Automotive)": {
-      "EV/Sales": 1.22,
-      "Cost of Capital": 8.39,
-      "Beta": 0.98,
-      "Revenue Growth Rate": 10.32,
-      "Operating Margin": 5.6,
-      "Sales Cap Ratio": 2.47,
-      "ROIC": 12.12,
-      "Tax Rate": 12.12,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.27,
+      "Cost of Capital": 6.78,
+      "Beta": 0.7,
+      "Revenue Growth Rate": 15.42,
+      "Operating Margin": 5.84,
+      "Sales Cap Ratio": 2.34,
+      "ROIC": 12.19,
+      "Tax Rate": 10.77,
+      "Cost of Debt": 5.07
     },
     "Retail (Building Supply)": {
-      "EV/Sales": 2.52,
-      "Cost of Capital": 11.0,
-      "Beta": 1.55,
-      "Revenue Growth Rate": 5.15,
-      "Operating Margin": 11.97,
-      "Sales Cap Ratio": 3.57,
-      "ROIC": 36.28,
-      "Tax Rate": 13.66,
-      "Cost of Debt": 5.78
+      "EV/Sales": 2.26,
+      "Cost of Capital": 9.51,
+      "Beta": 1.31,
+      "Revenue Growth Rate": 0.73,
+      "Operating Margin": 11.82,
+      "Sales Cap Ratio": 3.41,
+      "ROIC": 34.95,
+      "Tax Rate": 11.84,
+      "Cost of Debt": 5.29
     },
     "Retail (Distributors)": {
-      "EV/Sales": 1.81,
-      "Cost of Capital": 8.16,
-      "Beta": 0.91,
-      "Revenue Growth Rate": 7.07,
-      "Operating Margin": 10.79,
-      "Sales Cap Ratio": 1.88,
-      "ROIC": 17.54,
-      "Tax Rate": 13.5,
-      "Cost of Debt": 5.53
+      "EV/Sales": 1.89,
+      "Cost of Capital": 7.22,
+      "Beta": 0.78,
+      "Revenue Growth Rate": 10.12,
+      "Operating Margin": 10.32,
+      "Sales Cap Ratio": 1.83,
+      "ROIC": 16.11,
+      "Tax Rate": 14.59,
+      "Cost of Debt": 5.07
     },
     "Retail (General)": {
-      "EV/Sales": 2.05,
-      "Cost of Capital": 8.79,
-      "Beta": 0.99,
-      "Revenue Growth Rate": 14.4,
-      "Operating Margin": 5.92,
-      "Sales Cap Ratio": 3.6,
-      "ROIC": 11.98,
-      "Tax Rate": 16.75,
-      "Cost of Debt": 5.78
+      "EV/Sales": 2.11,
+      "Cost of Capital": 7.27,
+      "Beta": 0.76,
+      "Revenue Growth Rate": 9.92,
+      "Operating Margin": 6.5,
+      "Sales Cap Ratio": 3.51,
+      "ROIC": 13.59,
+      "Tax Rate": 19.1,
+      "Cost of Debt": 5.07
     },
     "Retail (Grocery and Food)": {
       "EV/Sales": 0.49,
-      "Cost of Capital": 5.96,
-      "Beta": 0.42,
-      "Revenue Growth Rate": 9.28,
-      "Operating Margin": 2.93,
-      "Sales Cap Ratio": 4.89,
-      "ROIC": 9.25,
-      "Tax Rate": 13.28,
-      "Cost of Debt": 5.08
+      "Cost of Capital": 7.24,
+      "Beta": 0.8,
+      "Revenue Growth Rate": -2.63,
+      "Operating Margin": 1.85,
+      "Sales Cap Ratio": 4.65,
+      "ROIC": 6.76,
+      "Tax Rate": 12.22,
+      "Cost of Debt": 5.29
     },
     "Retail (REITs)": {
-      "EV/Sales": 12.22,
-      "Cost of Capital": 6.96,
-      "Beta": 0.67,
-      "Revenue Growth Rate": 7.91,
-      "Operating Margin": 37.28,
+      "EV/Sales": 12.04,
+      "Cost of Capital": 5.57,
+      "Beta": 0.44,
+      "Revenue Growth Rate": 13.14,
+      "Operating Margin": 38.64,
       "Sales Cap Ratio": 0.14,
-      "ROIC": 5.0,
-      "Tax Rate": 1.19,
-      "Cost of Debt": 5.08
+      "ROIC": 5.16,
+      "Tax Rate": 1.6,
+      "Cost of Debt": 4.73
     },
     "Retail (Special Lines)": {
-      "EV/Sales": 1.07,
-      "Cost of Capital": 8.64,
-      "Beta": 1.0,
-      "Revenue Growth Rate": 6.79,
-      "Operating Margin": 5.3,
-      "Sales Cap Ratio": 3.68,
-      "ROIC": 17.68,
-      "Tax Rate": 8.23,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.63,
+      "Cost of Capital": 8.01,
+      "Beta": 0.95,
+      "Revenue Growth Rate": 6.96,
+      "Operating Margin": 8.08,
+      "Sales Cap Ratio": 2.99,
+      "ROIC": 21.54,
+      "Tax Rate": 10.07,
+      "Cost of Debt": 5.29
     },
     "Rubber& Tires": {
-      "EV/Sales": 0.62,
-      "Cost of Capital": 5.33,
-      "Beta": 0.17,
-      "Revenue Growth Rate": 2.76,
-      "Operating Margin": 4.34,
-      "Sales Cap Ratio": 1.5,
-      "ROIC": 5.76,
+      "EV/Sales": 0.59,
+      "Cost of Capital": 4.48,
+      "Beta": 0.14,
+      "Revenue Growth Rate": -13.23,
+      "Operating Margin": 2.57,
+      "Sales Cap Ratio": 1.39,
+      "ROIC": 3.17,
       "Tax Rate": 0.0,
-      "Cost of Debt": 6.41
+      "Cost of Debt": 5.29
     },
     "Semiconductor": {
-      "EV/Sales": 14.65,
-      "Cost of Capital": 10.76,
-      "Beta": 1.45,
-      "Revenue Growth Rate": 5.13,
-      "Operating Margin": 29.73,
-      "Sales Cap Ratio": 1.1,
-      "ROIC": 21.14,
-      "Tax Rate": 4.19,
-      "Cost of Debt": 5.78
+      "EV/Sales": 15.7,
+      "Cost of Capital": 10.55,
+      "Beta": 1.49,
+      "Revenue Growth Rate": 11.18,
+      "Operating Margin": 35.31,
+      "Sales Cap Ratio": 1.21,
+      "ROIC": 27.23,
+      "Tax Rate": 5.11,
+      "Cost of Debt": 5.29
     },
     "Semiconductor Equip": {
-      "EV/Sales": 5.07,
-      "Cost of Capital": 10.51,
-      "Beta": 1.39,
-      "Revenue Growth Rate": 11.67,
-      "Operating Margin": 24.19,
-      "Sales Cap Ratio": 1.68,
-      "ROIC": 24.2,
-      "Tax Rate": 9.95,
-      "Cost of Debt": 5.78
+      "EV/Sales": 7.61,
+      "Cost of Capital": 9.89,
+      "Beta": 1.35,
+      "Revenue Growth Rate": 9.38,
+      "Operating Margin": 26.29,
+      "Sales Cap Ratio": 1.85,
+      "ROIC": 28.4,
+      "Tax Rate": 9.96,
+      "Cost of Debt": 5.29
     },
     "Shipbuilding & Marine": {
-      "EV/Sales": 1.75,
-      "Cost of Capital": 6.64,
-      "Beta": 0.51,
-      "Revenue Growth Rate": -4.27,
-      "Operating Margin": 14.98,
+      "EV/Sales": 1.74,
+      "Cost of Capital": 6.69,
+      "Beta": 0.64,
+      "Revenue Growth Rate": -0.12,
+      "Operating Margin": 13.52,
       "Sales Cap Ratio": 0.94,
-      "ROIC": 13.23,
-      "Tax Rate": 5.78,
-      "Cost of Debt": 5.78
+      "ROIC": 11.99,
+      "Tax Rate": 5.26,
+      "Cost of Debt": 5.29
     },
     "Shoe": {
-      "EV/Sales": 2.4,
-      "Cost of Capital": 10.15,
-      "Beta": 1.32,
-      "Revenue Growth Rate": 9.91,
-      "Operating Margin": 13.01,
-      "Sales Cap Ratio": 2.54,
-      "ROIC": 29.12,
-      "Tax Rate": 11.06,
-      "Cost of Debt": 5.78
+      "EV/Sales": 2.04,
+      "Cost of Capital": 8.01,
+      "Beta": 0.93,
+      "Revenue Growth Rate": 12.43,
+      "Operating Margin": 9.14,
+      "Sales Cap Ratio": 2.62,
+      "ROIC": 20.93,
+      "Tax Rate": 11.86,
+      "Cost of Debt": 5.29
     },
     "Software (Entertainment)": {
-      "EV/Sales": 7.35,
-      "Cost of Capital": 9.58,
-      "Beta": 1.16,
-      "Revenue Growth Rate": 28.07,
-      "Operating Margin": 32.16,
-      "Sales Cap Ratio": 1.4,
-      "ROIC": 25.29,
-      "Tax Rate": 6.73,
-      "Cost of Debt": 6.41
+      "EV/Sales": 9.13,
+      "Cost of Capital": 8.44,
+      "Beta": 1.01,
+      "Revenue Growth Rate": 16.72,
+      "Operating Margin": 33.67,
+      "Sales Cap Ratio": 1.34,
+      "ROIC": 27.02,
+      "Tax Rate": 5.29,
+      "Cost of Debt": 5.29
     },
     "Software (Internet)": {
-      "EV/Sales": 7.59,
-      "Cost of Capital": 11.1,
-      "Beta": 1.56,
-      "Revenue Growth Rate": 19.72,
-      "Operating Margin": 2.05,
-      "Sales Cap Ratio": 1.23,
-      "ROIC": 2.93,
-      "Tax Rate": 2.18,
-      "Cost of Debt": 5.78
+      "EV/Sales": 9.56,
+      "Cost of Capital": 10.66,
+      "Beta": 1.55,
+      "Revenue Growth Rate": 29.18,
+      "Operating Margin": 3.74,
+      "Sales Cap Ratio": 1.35,
+      "ROIC": 3.43,
+      "Tax Rate": 3.05,
+      "Cost of Debt": 5.29
     },
     "Software (System & Application)": {
-      "EV/Sales": 11.54,
-      "Cost of Capital": 9.69,
-      "Beta": 1.2,
-      "Revenue Growth Rate": 15.55,
-      "Operating Margin": 28.77,
-      "Sales Cap Ratio": 1.71,
-      "ROIC": 26.85,
-      "Tax Rate": 4.44,
-      "Cost of Debt": 5.78
+      "EV/Sales": 11.41,
+      "Cost of Capital": 9.34,
+      "Beta": 1.23,
+      "Revenue Growth Rate": 19.56,
+      "Operating Margin": 33.21,
+      "Sales Cap Ratio": 1.54,
+      "ROIC": 29.32,
+      "Tax Rate": 5.51,
+      "Cost of Debt": 5.29
     },
     "Steel": {
-      "EV/Sales": 0.89,
-      "Cost of Capital": 8.17,
-      "Beta": 0.89,
-      "Revenue Growth Rate": 6.05,
-      "Operating Margin": 7.65,
-      "Sales Cap Ratio": 1.86,
-      "ROIC": 12.49,
-      "Tax Rate": 11.76,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.17,
+      "Cost of Capital": 7.76,
+      "Beta": 0.9,
+      "Revenue Growth Rate": 11.37,
+      "Operating Margin": 4.11,
+      "Sales Cap Ratio": 1.8,
+      "ROIC": 6.72,
+      "Tax Rate": 9.28,
+      "Cost of Debt": 5.07
     },
     "Telecom (Wireless)": {
-      "EV/Sales": 4.15,
-      "Cost of Capital": 6.92,
-      "Beta": 0.57,
-      "Revenue Growth Rate": 28.07,
-      "Operating Margin": 18.9,
-      "Sales Cap Ratio": 0.52,
-      "ROIC": 8.31,
-      "Tax Rate": 14.9,
-      "Cost of Debt": 6.41
+      "EV/Sales": 3.72,
+      "Cost of Capital": 5.48,
+      "Beta": 0.39,
+      "Revenue Growth Rate": 3.7,
+      "Operating Margin": 19.74,
+      "Sales Cap Ratio": 0.55,
+      "ROIC": 10.37,
+      "Tax Rate": 4.02,
+      "Cost of Debt": 5.07
     },
     "Telecom. Equipment": {
-      "EV/Sales": 5.48,
-      "Cost of Capital": 8.39,
-      "Beta": 0.91,
-      "Revenue Growth Rate": 2.55,
-      "Operating Margin": 17.8,
-      "Sales Cap Ratio": 2.67,
-      "ROIC": 21.77,
-      "Tax Rate": 4.35,
-      "Cost of Debt": 5.78
+      "EV/Sales": 6.52,
+      "Cost of Capital": 7.72,
+      "Beta": 0.86,
+      "Revenue Growth Rate": 3.27,
+      "Operating Margin": 20.92,
+      "Sales Cap Ratio": 2.57,
+      "ROIC": 25.47,
+      "Tax Rate": 7.06,
+      "Cost of Debt": 5.29
     },
     "Telecom. Services": {
-      "EV/Sales": 2.56,
-      "Cost of Capital": 6.37,
-      "Beta": 0.51,
-      "Revenue Growth Rate": 10.58,
-      "Operating Margin": 20.68,
-      "Sales Cap Ratio": 0.59,
-      "ROIC": 11.69,
-      "Tax Rate": 3.65,
-      "Cost of Debt": 5.78
+      "EV/Sales": 2.61,
+      "Cost of Capital": 5.39,
+      "Beta": 0.37,
+      "Revenue Growth Rate": 13.57,
+      "Operating Margin": 20.82,
+      "Sales Cap Ratio": 0.6,
+      "ROIC": 12.04,
+      "Tax Rate": 3.4,
+      "Cost of Debt": 5.29
     },
     "Tobacco": {
-      "EV/Sales": 5.54,
-      "Cost of Capital": 7.95,
-      "Beta": 0.81,
-      "Revenue Growth Rate": -0.52,
-      "Operating Margin": 41.22,
-      "Sales Cap Ratio": 1.73,
-      "ROIC": 57.9,
-      "Tax Rate": 12.5,
-      "Cost of Debt": 6.41
+      "EV/Sales": 6.4,
+      "Cost of Capital": 6.94,
+      "Beta": 0.68,
+      "Revenue Growth Rate": 2.91,
+      "Operating Margin": 43.68,
+      "Sales Cap Ratio": 1.82,
+      "ROIC": 63.08,
+      "Tax Rate": 14.77,
+      "Cost of Debt": 6.02
     },
     "Transportation": {
-      "EV/Sales": 1.58,
-      "Cost of Capital": 7.72,
-      "Beta": 0.8,
-      "Revenue Growth Rate": 8.57,
-      "Operating Margin": 6.9,
-      "Sales Cap Ratio": 1.94,
-      "ROIC": 10.9,
-      "Tax Rate": 11.9,
-      "Cost of Debt": 5.78
+      "EV/Sales": 1.64,
+      "Cost of Capital": 6.72,
+      "Beta": 0.68,
+      "Revenue Growth Rate": 9.12,
+      "Operating Margin": 7.64,
+      "Sales Cap Ratio": 1.98,
+      "ROIC": 13.0,
+      "Tax Rate": 8.54,
+      "Cost of Debt": 5.07
     },
     "Transportation (Railroads)": {
-      "EV/Sales": 6.28,
-      "Cost of Capital": 7.75,
-      "Beta": 0.82,
-      "Revenue Growth Rate": 2.23,
-      "Operating Margin": 38.26,
-      "Sales Cap Ratio": 0.48,
-      "ROIC": 15.06,
-      "Tax Rate": 17.14,
-      "Cost of Debt": 5.08
+      "EV/Sales": 6.67,
+      "Cost of Capital": 7.27,
+      "Beta": 0.81,
+      "Revenue Growth Rate": 4.91,
+      "Operating Margin": 37.43,
+      "Sales Cap Ratio": 0.46,
+      "ROIC": 14.24,
+      "Tax Rate": 16.98,
+      "Cost of Debt": 4.73
     },
     "Trucking": {
-      "EV/Sales": 1.85,
-      "Cost of Capital": 8.39,
-      "Beta": 0.94,
-      "Revenue Growth Rate": 10.23,
-      "Operating Margin": 7.32,
-      "Sales Cap Ratio": 1.63,
+      "EV/Sales": 1.74,
+      "Cost of Capital": 7.52,
+      "Beta": 0.85,
+      "Revenue Growth Rate": 3.33,
+      "Operating Margin": 7.31,
+      "Sales Cap Ratio": 1.47,
       "ROIC": 9.3,
-      "Tax Rate": 18.6,
-      "Cost of Debt": 5.53
+      "Tax Rate": 12.6,
+      "Cost of Debt": 5.07
     },
     "Utility (General)": {
-      "EV/Sales": 5.24,
-      "Cost of Capital": 5.2,
-      "Beta": 0.25,
-      "Revenue Growth Rate": 2.36,
-      "Operating Margin": 23.07,
-      "Sales Cap Ratio": 0.29,
-      "ROIC": 6.05,
-      "Tax Rate": 10.65,
-      "Cost of Debt": 5.08
+      "EV/Sales": 5.25,
+      "Cost of Capital": 4.36,
+      "Beta": 0.15,
+      "Revenue Growth Rate": 5.33,
+      "Operating Margin": 23.21,
+      "Sales Cap Ratio": 0.3,
+      "ROIC": 5.99,
+      "Tax Rate": 12.77,
+      "Cost of Debt": 4.73
     },
     "Utility (Water)": {
-      "EV/Sales": 7.51,
-      "Cost of Capital": 6.15,
-      "Beta": 0.47,
-      "Revenue Growth Rate": 11.65,
-      "Operating Margin": 33.03,
+      "EV/Sales": 7.16,
+      "Cost of Capital": 4.93,
+      "Beta": 0.28,
+      "Revenue Growth Rate": 13.3,
+      "Operating Margin": 33.65,
       "Sales Cap Ratio": 0.24,
-      "ROIC": 6.96,
-      "Tax Rate": 11.36,
-      "Cost of Debt": 5.08
+      "ROIC": 7.25,
+      "Tax Rate": 11.19,
+      "Cost of Debt": 4.73
+    },
+    "Total Market": {
+      "EV/Sales": 3.97,
+      "Cost of Capital": 6.96,
+      "Beta": 0.72,
+      "Revenue Growth Rate": 12.77,
+      "Operating Margin": 12.75,
+      "Sales Cap Ratio": 0.82,
+      "ROIC": 8.96,
+      "Tax Rate": 8.3,
+      "Cost of Debt": 5.29
+    },
+    "Total Market (without financials)": {
+      "EV/Sales": 3.46,
+      "Cost of Capital": 7.72,
+      "Beta": 0.88,
+      "Revenue Growth Rate": 13.75,
+      "Operating Margin": 13.06,
+      "Sales Cap Ratio": 1.43,
+      "ROIC": 15.01,
+      "Tax Rate": 7.1,
+      "Cost of Debt": 5.29
     }
   },
   "countries": {
@@ -1065,12 +1087,6 @@
     },
     "Angola": {
       "ERP": 12.64
-    },
-    "Anguilla": {
-      "ERP": null
-    },
-    "Antigua & Barbuda": {
-      "ERP": null
     },
     "Argentina": {
       "ERP": 13.94
@@ -1129,9 +1145,6 @@
     "Brazil": {
       "ERP": 7.47
     },
-    "British Virgin Islands": {
-      "ERP": null
-    },
     "Brunei": {
       "ERP": 5.01
     },
@@ -1156,9 +1169,6 @@
     "Cayman Islands": {
       "ERP": 5.01
     },
-    "Channel Islands": {
-      "ERP": null
-    },
     "Chile": {
       "ERP": 5.33
     },
@@ -1180,13 +1190,16 @@
     "Costa Rica": {
       "ERP": 8.13
     },
+    "C\u00f4te d'Ivoire": {
+      "ERP": 8.13
+    },
     "Croatia": {
       "ERP": 5.78
     },
     "Cuba": {
       "ERP": 19.77
     },
-    "Cura\u00e7ao": {
+    "Curacao": {
       "ERP": 7.08
     },
     "Cyprus": {
@@ -1216,9 +1229,6 @@
     "Ethiopia": {
       "ERP": 15.89
     },
-    "Falkland Islands": {
-      "ERP": null
-    },
     "Fiji": {
       "ERP": 10.06
     },
@@ -1227,9 +1237,6 @@
     },
     "France": {
       "ERP": 5.01
-    },
-    "French Guiana": {
-      "ERP": null
     },
     "Gabon": {
       "ERP": 15.89
@@ -1246,14 +1253,8 @@
     "Ghana": {
       "ERP": 13.94
     },
-    "Gibraltar": {
-      "ERP": null
-    },
     "Greece": {
       "ERP": 7.08
-    },
-    "Greenland": {
-      "ERP": null
     },
     "Guatemala": {
       "ERP": 7.47
@@ -1309,9 +1310,6 @@
     "Italy": {
       "ERP": 6.69
     },
-    "Ivory Coast": {
-      "ERP": 8.13
-    },
     "Jamaica": {
       "ERP": 8.89
     },
@@ -1329,6 +1327,9 @@
     },
     "Kenya": {
       "ERP": 13.94
+    },
+    "Korea": {
+      "ERP": 4.87
     },
     "Korea, D.P.R.": {
       "ERP": 19.77
@@ -1363,7 +1364,7 @@
     "Luxembourg": {
       "ERP": 4.23
     },
-    "Macau": {
+    "Macao": {
       "ERP": 5.01
     },
     "Macedonia": {
@@ -1387,9 +1388,6 @@
     "Malta": {
       "ERP": 5.33
     },
-    "Martinique": {
-      "ERP": null
-    },
     "Mauritius": {
       "ERP": 7.08
     },
@@ -1398,9 +1396,6 @@
     },
     "Moldova": {
       "ERP": 12.64
-    },
-    "Monaco": {
-      "ERP": null
     },
     "Mongolia": {
       "ERP": 10.06
@@ -1429,9 +1424,6 @@
     "Netherlands": {
       "ERP": 4.23
     },
-    "Netherlands Antilles": {
-      "ERP": null
-    },
     "New Zealand": {
       "ERP": 4.23
     },
@@ -1452,9 +1444,6 @@
     },
     "Pakistan": {
       "ERP": 13.94
-    },
-    "Palestinian Authority": {
-      "ERP": null
     },
     "Panama": {
       "ERP": 7.08
@@ -1483,9 +1472,6 @@
     "Ras Al Khaimah (Emirate of)": {
       "ERP": 5.78
     },
-    "Reunion": {
-      "ERP": null
-    },
     "Romania": {
       "ERP": 7.08
     },
@@ -1494,9 +1480,6 @@
     },
     "Rwanda": {
       "ERP": 11.35
-    },
-    "Saint Lucia": {
-      "ERP": null
     },
     "Saudi Arabia": {
       "ERP": 5.01
@@ -1530,9 +1513,6 @@
     },
     "South Africa": {
       "ERP": 8.13
-    },
-    "South Korea": {
-      "ERP": 4.87
     },
     "Spain": {
       "ERP": 5.78
@@ -1579,7 +1559,7 @@
     "Togo": {
       "ERP": 12.64
     },
-    "Trinidad & Tobago": {
+    "Trinidad and Tobago": {
       "ERP": 8.13
     },
     "Tunisia": {
@@ -1588,7 +1568,7 @@
     "Turkey": {
       "ERP": 10.06
     },
-    "Turks & Caicos Islands": {
+    "Turks and Caicos Islands": {
       "ERP": 6.3
     },
     "Uganda": {
@@ -1604,7 +1584,7 @@
       "ERP": 5.01
     },
     "United States": {
-      "ERP": 4.18
+      "ERP": 4.17
     },
     "Uruguay": {
       "ERP": 6.3
@@ -1618,7 +1598,7 @@
     "Vietnam": {
       "ERP": 8.13
     },
-    "Yemen": {
+    "Yemen, Republic": {
       "ERP": 19.77
     },
     "Zambia": {
@@ -1659,8 +1639,8 @@
     "Western Europe": {
       "ERP": 5.2665467678857745
     },
-    "EMEA": {
-      "ERP": 5.91478631288238
+    "Global": {
+      "ERP": 5.625707330046292
     },
     "Rest of World": {
       "ERP": 5.625707330046292
@@ -1674,110 +1654,110 @@
       "lt_safe": -100001,
       "lt_risk": -100001
     },
-    "Aaa/AAA": {
-      "Spread": 0.45,
-      "gt_safe": 8.5,
-      "gt_risk": 12.5,
-      "lt_safe": 100000.0,
-      "lt_risk": 100000.0
-    },
-    "Aa2/AA": {
-      "Spread": 0.6,
-      "gt_safe": 6.5,
-      "gt_risk": 9.5,
-      "lt_safe": 8.499999,
-      "lt_risk": 12.499999
-    },
-    "A1/A+": {
-      "Spread": 0.77,
-      "gt_safe": 5.5,
-      "gt_risk": 7.5,
-      "lt_safe": 6.499999,
-      "lt_risk": 9.499999
-    },
-    "A2/A": {
-      "Spread": 0.85,
-      "gt_safe": 4.25,
-      "gt_risk": 6.0,
-      "lt_safe": 5.499999,
-      "lt_risk": 7.499999
-    },
-    "A3/A-": {
-      "Spread": 0.95,
-      "gt_safe": 3.0,
-      "gt_risk": 4.5,
-      "lt_safe": 4.249999,
-      "lt_risk": 5.999999
-    },
-    "Baa2/BBB": {
-      "Spread": 1.2,
-      "gt_safe": 2.5,
-      "gt_risk": 4.0,
-      "lt_safe": 2.999999,
-      "lt_risk": 4.499999
-    },
-    "Ba1/BB+": {
-      "Spread": 1.55,
-      "gt_safe": 2.25,
-      "gt_risk": 3.5,
-      "lt_safe": 2.49999,
-      "lt_risk": 3.9999999
-    },
-    "Ba2/BB": {
-      "Spread": 1.83,
-      "gt_safe": 2.0,
-      "gt_risk": 3.0,
-      "lt_safe": 2.2499999,
-      "lt_risk": 3.499999
-    },
-    "B1/B+": {
-      "Spread": 2.61,
-      "gt_safe": 1.75,
-      "gt_risk": 2.5,
-      "lt_safe": 1.999999,
-      "lt_risk": 2.999999
-    },
-    "B2/B": {
-      "Spread": 3.0,
-      "gt_safe": 1.5,
-      "gt_risk": 2.0,
-      "lt_safe": 1.749999,
-      "lt_risk": 2.499999
-    },
-    "B3/B-": {
-      "Spread": 4.42,
-      "gt_safe": 1.25,
-      "gt_risk": 1.5,
-      "lt_safe": 1.499999,
-      "lt_risk": 1.999999
-    },
-    "C2/C": {
-      "Spread": 15.5,
-      "gt_safe": 0.2,
-      "gt_risk": 0.5,
-      "lt_safe": 0.649999,
-      "lt_risk": 0.799999
-    },
-    "Ca2/CC": {
-      "Spread": 10.1,
-      "gt_safe": 0.65,
-      "gt_risk": 0.8,
-      "lt_safe": 0.799999,
-      "lt_risk": 1.249999
-    },
-    "Caa/CCC": {
-      "Spread": 7.28,
-      "gt_safe": 0.8,
-      "gt_risk": 1.25,
-      "lt_safe": 1.249999,
-      "lt_risk": 1.499999
-    },
     "D2/D": {
       "Spread": 19.0,
       "gt_safe": -100000.0,
       "gt_risk": -100000.0,
       "lt_safe": 0.199999,
-      "lt_risk": 0.499999
+      "lt_risk": 0.5
+    },
+    "C2/C": {
+      "Spread": 16.0,
+      "gt_safe": 0.2,
+      "gt_risk": 0.5,
+      "lt_safe": 0.649999,
+      "lt_risk": 0.8
+    },
+    "Ca2/CC": {
+      "Spread": 12.61,
+      "gt_safe": 0.65,
+      "gt_risk": 0.8,
+      "lt_safe": 0.799999,
+      "lt_risk": 1.25
+    },
+    "Caa/CCC": {
+      "Spread": 8.85,
+      "gt_safe": 0.8,
+      "gt_risk": 1.25,
+      "lt_safe": 1.249999,
+      "lt_risk": 1.5
+    },
+    "B3/B-": {
+      "Spread": 5.09,
+      "gt_safe": 1.25,
+      "gt_risk": 1.5,
+      "lt_safe": 1.499999,
+      "lt_risk": 2.0
+    },
+    "B2/B": {
+      "Spread": 3.21,
+      "gt_safe": 1.5,
+      "gt_risk": 2.0,
+      "lt_safe": 1.749999,
+      "lt_risk": 2.5
+    },
+    "B1/B+": {
+      "Spread": 2.75,
+      "gt_safe": 1.75,
+      "gt_risk": 2.5,
+      "lt_safe": 1.999999,
+      "lt_risk": 3.0
+    },
+    "Ba2/BB": {
+      "Spread": 1.84,
+      "gt_safe": 2.0,
+      "gt_risk": 3.0,
+      "lt_safe": 2.2499999,
+      "lt_risk": 3.5
+    },
+    "Ba1/BB+": {
+      "Spread": 1.38,
+      "gt_safe": 2.25,
+      "gt_risk": 3.5,
+      "lt_safe": 2.49999,
+      "lt_risk": 4.0
+    },
+    "Baa2/BBB": {
+      "Spread": 1.11,
+      "gt_safe": 2.5,
+      "gt_risk": 4.0,
+      "lt_safe": 2.999999,
+      "lt_risk": 4.5
+    },
+    "A3/A-": {
+      "Spread": 0.89,
+      "gt_safe": 3.0,
+      "gt_risk": 4.5,
+      "lt_safe": 4.249999,
+      "lt_risk": 6.0
+    },
+    "A2/A": {
+      "Spread": 0.78,
+      "gt_safe": 4.25,
+      "gt_risk": 6.0,
+      "lt_safe": 5.499999,
+      "lt_risk": 7.5
+    },
+    "A1/A+": {
+      "Spread": 0.7,
+      "gt_safe": 5.5,
+      "gt_risk": 7.5,
+      "lt_safe": 6.499999,
+      "lt_risk": 9.5
+    },
+    "Aa2/AA": {
+      "Spread": 0.55,
+      "gt_safe": 6.5,
+      "gt_risk": 9.5,
+      "lt_safe": 8.499999,
+      "lt_risk": 12.5
+    },
+    "Aaa/AAA": {
+      "Spread": 0.4,
+      "gt_safe": 8.5,
+      "gt_risk": 12.5,
+      "lt_safe": 100000.0,
+      "lt_risk": 100000.0
     }
   }
 }
