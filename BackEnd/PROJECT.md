@@ -76,7 +76,7 @@
 - Sprint - Scaffolding:
     - Create scaffolding for backend, db, rfr pipeline
     - Deploy rfr pipeline to run daily and add to db
-    - Deploy backend and db to serve just the rfr
+    - ~~Deploy backend and db to serve just the rfr~~
     - Deploy mappings for tickers
 - Sprint - SEC Pipeline:
     - Develop and deploy the SEC pipeline to dump to db
