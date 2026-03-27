@@ -1,6 +1,8 @@
 import Database from 'better-sqlite3'
 import { NodeCache } from '@cacheable/node-cache'
 
+import logger from './LoggerService.js'
+
 const db = new Database(process.env.SQLITE_DB, { verbose: console.log })
 db.pragma('journal_mode = WAL')
 
@@ -13,11 +15,11 @@ const cacheCall = (key, call) => {
   const cached = cache.get(key)
 
   if (cached) {
-    console.log(`cache hit: ${key}`)
+    logger.debug(`cache hit: ${key}`)
     return cached
   }
 
-  console.log(`cache miss: ${key}`)
+  logger.debug(`cache miss: ${key}`)
 
   const val = call()
 

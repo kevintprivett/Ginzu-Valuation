@@ -18,7 +18,8 @@
   "dependencies": {
     "@cacheable/node-cache": "^3.0.0",
     "better-sqlite3": "^12.8.0",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "winston": "^3.19.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
