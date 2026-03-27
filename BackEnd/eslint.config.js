@@ -34,6 +34,7 @@ export default [
       'no-console': 'warn',
       'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       'no-process-exit': 'off',
+      'no-warning-comments': 'warn',
     },
   },
 
