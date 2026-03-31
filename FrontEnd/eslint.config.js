@@ -1,18 +1,17 @@
 import js from '@eslint/js'
 import globals from 'globals'
-// import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
-import { defineConfig, globalIgnores } from 'eslint/config'
 
-export default defineConfig([
-  globalIgnores(['dist', 'coverage']),
+export default [
+  {
+    ignores: ['dist/**', 'coverage/**', 'node_modules/**']
+  },
   {
     files: ['**/*.{js,jsx}'],
-    extends: [
-      js.configs.recommended,
-      // reactHooks.configs['recommended-latest'],
-      reactRefresh.configs.vite,
-    ],
+    ...js.configs.recommended,
+    plugins: {
+      'react-refresh': reactRefresh,
+    },
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
@@ -23,7 +22,8 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: "^_" }],
+      ...reactRefresh.configs.vite.rules,
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: '^_' }],
       'no-warning-comments': ['error', { terms: ['fixme', 'todo', 'delete'], location: 'anywhere' }],
     },
   },
@@ -35,4 +35,4 @@ export default defineConfig([
       }
     }
   }
-])
+]
