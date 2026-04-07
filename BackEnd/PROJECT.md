@@ -67,20 +67,16 @@
         - https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&CIK=&type=&company=&dateb=&owner=include&start=0&count=40&output=atom
     - honestly, 1.3 GB of data doesn't seem like that much...
 
-### TODO:
-- ~~Create Sprint Plans~~
-- ~~Organize SEC links for bulk import and daily imports, along with any other ref links needed~~
-- ~~Flesh out specs for front-end, back-end, db, dataflow~~
-
 ### Sprints:
-- Sprint - Scaffolding:
-    - Create scaffolding for backend, db, rfr pipeline
-    - Deploy rfr pipeline to run daily and add to db
+- ~~Sprint - Scaffolding:~~
+    - ~~Create scaffolding for backend, db, rfr pipeline~~
+    - ~~Deploy rfr pipeline to run daily and add to db~~
     - ~~Deploy backend and db to serve just the rfr~~
-    - Deploy mappings for tickers
 - Sprint - SEC Pipeline:
     - Develop and deploy the SEC pipeline to dump to db
 - Sprint - Frontend:
     - Develop interface in frontend for making requests to this new backend for this data
 - Sprint - Backend:
     - Develop and deploy the full backend
+- Sprint - CI/CD:
+    - Figure out how to deploy all of this on main push
