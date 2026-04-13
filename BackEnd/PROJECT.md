@@ -32,9 +32,13 @@
 
 ### Database
 - Need to review anything special for sqlite schema
+- dates are integers (unix time)
+- Maybe add an index on ticker?
 - tables
     - tickers
-        - ticker_symbol, sec_id, data_jsonb, created_on, updated_on
+        - cik (pk, int), ticker (str), data_jsonb (blob), created_on (int - unix), updated_on (int - unix)
+    - rfr
+        - rate (real), created_on (int - unix ; order by)
 
 ### Pipelines
 - I think that simple cron jobs with python scripts are appropriate
@@ -45,6 +49,8 @@
     - depending on size of data, polars or pandas for the transform steps
 
 ### SEC Links
+- IMPORTANT: breakdown of the sec us-gaap taxonomy (field names) and how often they are used
+    - https://xbrl.fasb.org/resources/annualrelease/2026/GAAP_Taxonomy.zip
 - https://www.sec.gov/search-filings/edgar-application-programming-interfaces
 - ticker to CIK mapping: https://www.sec.gov/include/ticker.txt
 - I'm not sure what the schema is, but here are some attributes that could be useful:
@@ -73,7 +79,8 @@
     - ~~Deploy rfr pipeline to run daily and add to db~~
     - ~~Deploy backend and db to serve just the rfr~~
 - Sprint - SEC Pipeline:
-    - Develop and deploy the SEC pipeline to dump to db
+    - ~~Develop and deploy the SEC pipeline to dump to db~~
+    - ~~Do testing on multiple companies, seems like I'll need to have a lot of keywords saved to find the exact number I need~~
 - Sprint - Frontend:
     - Develop interface in frontend for making requests to this new backend for this data
 - Sprint - Backend:
