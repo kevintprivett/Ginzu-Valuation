@@ -7,7 +7,7 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "start": "node --env-file=.env src/app.js",
+    "start": "NODE_ENV=production node --env-file=.env src/app.js",
     "dev": "nodemon --env-file=.env src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
@@ -18,7 +18,11 @@
   "dependencies": {
     "@cacheable/node-cache": "^3.0.0",
     "better-sqlite3": "^12.8.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
     "express": "^5.2.1",
+    "express-rate-limit": "^8.4.0",
+    "helmet": "^8.1.0",
     "winston": "^3.19.0"
   },
   "devDependencies": {

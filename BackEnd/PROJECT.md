@@ -78,12 +78,16 @@
     - ~~Create scaffolding for backend, db, rfr pipeline~~
     - ~~Deploy rfr pipeline to run daily and add to db~~
     - ~~Deploy backend and db to serve just the rfr~~
-- Sprint - SEC Pipeline:
+- ~~Sprint - SEC Pipeline:~~
     - ~~Develop and deploy the SEC pipeline to dump to db~~
     - ~~Do testing on multiple companies, seems like I'll need to have a lot of keywords saved to find the exact number I need~~
-- Sprint - Frontend:
-    - Develop interface in frontend for making requests to this new backend for this data
 - Sprint - Backend:
     - Develop and deploy the full backend
+    - Review https://expressjs.com/en/advanced/best-practice-performance.html and implement suggestions
+        - remove try/except and switch to async
+        - use compression
+        - test for sync functions
+- Sprint - Frontend:
+    - Develop interface in frontend for making requests to this new backend for this data
 - Sprint - CI/CD:
     - Figure out how to deploy all of this on main push

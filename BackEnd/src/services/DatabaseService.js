@@ -3,7 +3,8 @@ import { NodeCache } from '@cacheable/node-cache';
 
 import logger from './LoggerService.js';
 
-const db = new Database(process.env.SQLITE_DB, { verbose: logger.debug });
+// { verbose: logger.debug }
+const db = new Database(process.env.SQLITE_DB);
 db.pragma('journal_mode = WAL');
 
 const cache = new NodeCache({
@@ -15,15 +16,15 @@ const cacheCall = (key, call) => {
   const cached = cache.get(key);
 
   if (cached) {
-    logger.debug('cache hit: ', key);
+    logger.debug('cache hit: %s', key);
     return cached;
   }
 
-  logger.debug('cache miss: ', key);
+  logger.debug('cache miss: %s', key);
 
   const val = call();
 
-  cache.set('getRfr', val);
+  cache.set(key, val);
 
   return val;
 };
@@ -35,8 +36,57 @@ const getRfrStmt = db.prepare(`
   LIMIT 1;
 `);
 
+/**
+ * Gets most recent RFR
+ * @returns {string} most recent rfr as xx.xx (percent implied)
+ * @throws error for db
+ */
 export const getRfr = () => {
   return cacheCall('getRfr', () => {
-    return getRfrStmt.get().rate;
+    let result;
+
+    try {
+      result = getRfrStmt.get()?.rate;
+    } catch (err) {
+      logger.error('Error getting rfr data: %s', err);
+      throw err;
+    }
+
+    return result ? result : undefined;
   });
 };
+
+const getTickerStmt = db.prepare(`
+  SELECT data_jsonb
+  FROM tickers
+  WHERE cik=CAST (? AS INTEGER);
+`);
+
+/**
+ * Gets the parsed json of the requested ticker
+ * @param {int} cik id
+ * @returns {object|undefined} parsed json or undefined
+ * @throws error for db and json parsing
+ */
+export const getTicker = (cik) => {
+  return cacheCall(`getTicker_${cik}`, () => {
+    let resultRaw;
+    try {
+      resultRaw = getTickerStmt.get(cik)?.data_jsonb;
+    } catch (err) {
+      logger.error('Error getting ticker data: %s', err);
+      throw err;
+    }
+
+    if (resultRaw) {
+      try {
+        return JSON.parse(resultRaw);
+      } catch (err) {
+        logger.error('Error parsing ticker data: %s', err);
+        throw err;
+      }
+    }
+  })
+};
+
+process.on('SIGINT', () => db.close());
