@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ginzu-backend
+    volumes:
+      - ./ginzu.db:/ginzu/BackEnd/ginzu.db
+      - ../common/ticker.txt:/ginzu/common/ticker.txt
+    ports:
+      - "8001:3000"
+    env_file:
+      - .env
+    restart: unless-stopped

@@ -81,12 +81,9 @@
 - ~~Sprint - SEC Pipeline:~~
     - ~~Develop and deploy the SEC pipeline to dump to db~~
     - ~~Do testing on multiple companies, seems like I'll need to have a lot of keywords saved to find the exact number I need~~
-- Sprint - Backend:
-    - Develop and deploy the full backend
-    - Review https://expressjs.com/en/advanced/best-practice-performance.html and implement suggestions
-        - remove try/except and switch to async
-        - use compression
-        - test for sync functions
+- ~~Sprint - Backend:~~
+    - ~~Develop and deploy the full backend~~
+    - ~~Create and deploy a docker image~~
 - Sprint - Frontend:
     - Develop interface in frontend for making requests to this new backend for this data
 - Sprint - CI/CD:
