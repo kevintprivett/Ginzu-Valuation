@@ -86,7 +86,7 @@ export const getTicker = (cik) => {
         throw err;
       }
     }
-  })
+  });
 };
 
 process.on('SIGINT', () => db.close());
