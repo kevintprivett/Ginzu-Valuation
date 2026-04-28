@@ -1,6 +1,7 @@
 import js from '@eslint/js'
 import globals from 'globals'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import reactHooks from 'eslint-plugin-react-hooks';
 
 export default [
   {
@@ -11,6 +12,7 @@ export default [
     ...js.configs.recommended,
     plugins: {
       'react-refresh': reactRefresh,
+      'react-hooks': reactHooks,
     },
     languageOptions: {
       ecmaVersion: 2020,
@@ -22,6 +24,7 @@ export default [
       },
     },
     rules: {
+      ...reactHooks.configs.rules,
       ...reactRefresh.configs.vite.rules,
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: '^_' }],
       'no-warning-comments': ['error', { terms: ['fixme', 'todo', 'delete'], location: 'anywhere' }],
