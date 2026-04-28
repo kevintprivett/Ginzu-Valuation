@@ -15,8 +15,10 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
 import { NumericFormat } from 'react-number-format'
 import dayjs from 'dayjs'
 
-import { update } from '../reducers/companyReducer'
+import { update, updateTicker } from '../reducers/companyReducer'
 import { Industries } from '../utils/Enums'
+import tickerMap from '../utils/ticker'
+import getTicker from '../utils/getTicker'
 
 const CompanyInfoPanel = () => {
   const dispatch = useDispatch()
@@ -34,6 +36,23 @@ const CompanyInfoPanel = () => {
       key: key,
       value: value
     }))
+  }
+
+  const handleTickerGet = (ticker) => {
+    console.log(`Ticker: ${ticker}`)
+    getTicker(ticker)
+      .then((data) => {
+        console.log(data)
+        dispatch(updateTicker(data))
+      })
+  }
+
+  const inTickerMap = (ticker) => {
+    if (Object.hasOwn(tickerMap, ticker.toLowerCase())) {
+      console.log('Ticker in tickerMap!')
+      return true
+    }
+    return false
   }
 
   return (
@@ -76,14 +95,21 @@ const CompanyInfoPanel = () => {
             align='center'
             sx={{ width: 150 }}
           >
-            Company Name
+            Company Ticker  
           </Typography>
           <TextField
             variant='outlined'
-            value={company.name}
-            onChange={(event) => handleChange("name", event.target.value)}
+            value={company.ticker}
+            onChange={(event) => handleChange("ticker", event.target.value)}
             sx={{ width: 250 }}
           />
+          {inTickerMap(company.ticker) && 
+            <Link
+              onClick={() => handleTickerGet(company.ticker)}
+            >
+              Get Company Data
+            </Link>
+          }
         </Stack>
         <Stack
           direction='row'
@@ -96,12 +122,12 @@ const CompanyInfoPanel = () => {
             align='center'
             sx={{ width: 150 }}
           >
-            Company Ticker  
+            Company Name
           </Typography>
           <TextField
             variant='outlined'
-            value={company.ticker}
-            onChange={(event) => handleChange("ticker", event.target.value)}
+            value={company.name}
+            onChange={(event) => handleChange("name", event.target.value)}
             sx={{ width: 250 }}
           />
         </Stack>

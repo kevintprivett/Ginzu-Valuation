@@ -20,7 +20,7 @@ app.use(limiter);
 app.use(compression());
 app.use(
   cors({
-    origin: ['https://kevintprivett.github.io', 'http://localhost:3000'],
+    origin: ['https://kevintprivett.github.io', 'http://localhost:5173'],
     methods: ['GET'],
   })
 );

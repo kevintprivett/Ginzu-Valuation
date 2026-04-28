@@ -581,7 +581,7 @@ def transform(raw_data):
         ticker=ticker,
         cik=cik,
         industry=ticker_ind_map.get(ticker, 'Choose an Industry'),
-        years10k=quarters_since_10k/4.0,
+        years10k= 1.0 if quarters_since_10k == 0 else quarters_since_10k/4.0,
         taxRateEffective=tax_rate,
         shares=shares,
         nol=nol,

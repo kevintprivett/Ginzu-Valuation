@@ -243,9 +243,15 @@ const companySlice = createSlice({
     },
     reset(_state, _action) {
       return initialState
+    },
+    updateTicker(_state, action) {
+      return {
+        ...initialState,
+        ...action.payload
+      }
     }
   }
 })
 
-export const { update, updateAll, reset } = companySlice.actions
+export const { update, updateAll, reset, updateTicker } = companySlice.actions
 export default companySlice.reducer
