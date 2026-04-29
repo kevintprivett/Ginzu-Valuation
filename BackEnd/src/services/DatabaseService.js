@@ -17,16 +17,18 @@ const cacheCall = (key, call) => {
 
   if (cached) {
     logger.debug('cache hit: %s', key);
-    return cached;
+    return cached !== -1 ? cached : null;
   }
 
   logger.debug('cache miss: %s', key);
 
-  const val = call();
+  let val = call();
 
-  cache.set(key, val);
+  if (!val) {val = -1}
 
-  return val;
+  cache.set(key, val)
+
+  return val !== -1 ? val : null;
 };
 
 const getRfrStmt = db.prepare(`
@@ -52,7 +54,7 @@ export const getRfr = () => {
       throw err;
     }
 
-    return result ? result : undefined;
+    return result ? result : null;
   });
 };
 
