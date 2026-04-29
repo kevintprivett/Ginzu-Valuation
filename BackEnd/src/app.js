@@ -72,7 +72,7 @@ app.get('/tickers/:ticker', (req, res) => {
       return res.status(500).json({ error: 'Unable to send ticker data' });
     }
 
-    if (result) {
+    if (result && result.ticker) {
       return res.json(result);
     }
   }

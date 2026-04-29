@@ -4,8 +4,16 @@ const API_URL = import.meta.env.VITE_API_URL;
 
 export const getTicker = (ticker) => {
   return fetch(`${API_URL}/tickers/${ticker}`)
-    .then((res) => res.json())
-    .catch(console.error)
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error()
+      }
+      return res.json()
+    })
+    .catch(() => {
+      console.error(`Data for ${ticker} not found`)
+      return null
+    })
 }
 
 export const rfrApi = createApi({

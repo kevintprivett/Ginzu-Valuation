@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {
   Typography,
@@ -6,7 +7,9 @@ import {
   TextField,
   Select,
   MenuItem,
-  Link
+  Link,
+  Snackbar,
+  Alert
 } from '@mui/material'
 import { DatePicker } from '@mui/x-date-pickers/DatePicker'
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo'
@@ -23,6 +26,8 @@ import { getTicker } from '../services/apiService'
 const CompanyInfoPanel = () => {
   const dispatch = useDispatch()
   const company = useSelector((state) => state.company)
+  const [successToastOpen, setSuccessToastOpen] = useState(false);
+  const [errorToastOpen, setErrorToastOpen] = useState(false);
 
   const textFieldProps = {
     variant: 'outlined',
@@ -39,17 +44,30 @@ const CompanyInfoPanel = () => {
   }
 
   const handleTickerGet = (ticker) => {
-    console.log(`Ticker: ${ticker}`)
     getTicker(ticker)
       .then((data) => {
-        console.log(data)
-        dispatch(updateTicker(data))
+        if (data && !Object.hasOwn(data, 'error')) {
+          dispatch(updateTicker(data))
+          setSuccessToastOpen(true)
+        } else {
+          setErrorToastOpen(true)
+        }
       })
+      .catch(() => {
+        setErrorToastOpen(true)
+      })
+  }
+
+  const handleSuccessToastClose = () => {
+    setSuccessToastOpen(false)
+  }
+
+  const handleErrorToastClose = () => {
+    setErrorToastOpen(false)
   }
 
   const inTickerMap = (ticker) => {
     if (Object.hasOwn(tickerMap, ticker.toLowerCase())) {
-      console.log('Ticker in tickerMap!')
       return true
     }
     return false
@@ -197,6 +215,30 @@ const CompanyInfoPanel = () => {
           }
         </Stack>
       </Stack>
+      <Snackbar open={successToastOpen} autoHideDuration={6000} onClose={handleSuccessToastClose}>
+        <Alert
+          onClose={handleSuccessToastClose}
+          severity="success"
+          variant="filled"
+          sx={{ width: '100%', color: 'white'}}
+        >
+          <Typography variant='body1' >
+            Company info retrieved successfully!
+          </Typography>
+        </Alert>
+      </Snackbar>
+      <Snackbar open={errorToastOpen} autoHideDuration={6000} onClose={handleErrorToastClose}>
+        <Alert
+          onClose={handleErrorToastClose}
+          severity="warning"
+          variant="filled"
+          sx={{ width: '100%' }}
+        >
+          <Typography variant='body1' >
+            No company info found!
+          </Typography>
+        </Alert>
+      </Snackbar>
     </Box>
   )
 }
