@@ -1,3 +1,4 @@
+import { beforeEach, vi } from 'vitest'
 import * as finCalcs from './financialCalculations'
 import {
   Industries,
@@ -12,8 +13,13 @@ import {
 } from './Enums'
 import marketData from './marketData'
 
+const rfr = 4.00
 
 describe('calculateWeight', () => {
+  beforeEach(() => {
+    vi.clearAllMocks()
+  })
+
   test('simple array', () => {
     const array = [1, 2, 3]
     const index = 1
@@ -145,7 +151,7 @@ describe('calculateCostOfCapital', () => {
 
     const cop = 10.00
     const cod = 11.11
-    const coe = marketData.rfr + 12.34
+    const coe = rfr + 12.34
 
     const expected = valueOfEquity / totalCapital * coe +
                      valueOfDebt / totalCapital * cod +
@@ -227,7 +233,7 @@ describe('calculateCostOfEquity', () => {
       }
     }
 
-    const expected = marketData.rfr + 12.34
+    const expected = rfr + 12.34
 
     const result = finCalcs.calculateCostOfEquity(company)
 
@@ -258,7 +264,7 @@ describe('calculateCostOfEquity', () => {
 
     const leveredBeta = marketData.industries[Industries.ADVERTISING]['Beta']
 
-    const expected = marketData.rfr + leveredBeta * 12.34
+    const expected = rfr + leveredBeta * 12.34
 
     const result = finCalcs.calculateCostOfEquity(company)
 
@@ -287,7 +293,7 @@ describe('calculateCostOfEquity', () => {
       }
     }
 
-    const expected = marketData.rfr
+    const expected = rfr
 
     const result = finCalcs.calculateCostOfEquity(company)
 
@@ -332,7 +338,6 @@ describe('calculateCostOfDebt', () => {
     }
 
     const creditSpread = marketData.credit_ratings[DebtRatings.AAA]["Spread"]
-    const rfr = marketData.rfr
 
     const expected = (rfr + creditSpread) * 0.9
 
@@ -353,7 +358,6 @@ describe('calculateCostOfDebt', () => {
     }
 
     const creditSpread = marketData.credit_ratings[DebtRatings.AAA]["Spread"]
-    const rfr = marketData.rfr
 
     const expected = (rfr + creditSpread) * 0.9
 

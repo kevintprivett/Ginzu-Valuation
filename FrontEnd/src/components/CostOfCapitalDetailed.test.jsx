@@ -1,11 +1,12 @@
+import { vi, beforeEach } from 'vitest'
 import { screen } from '@testing-library/react'
 
 import { renderWithProvider } from '../utils/testUtils.jsx'
 import CostOfCapitalDetailed from './CostOfCapitalDetailed'
 
-
 describe('CostOfCapitalDetailed', async () => {
   beforeEach(() => {
+    vi.clearAllMocks()
     renderWithProvider(<CostOfCapitalDetailed />)
   })
 

@@ -66,7 +66,7 @@ describe('CompanyInfoPanel', async () => {
 
       expect(linkBefore).toBeNull()
 
-      const ticker = screen.getAllByRole('textbox')[1]
+      const ticker = screen.getAllByRole('textbox')[0]
 
       await user.clear(ticker)
       await user.type(ticker, 'AAPL')

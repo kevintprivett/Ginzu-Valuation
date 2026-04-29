@@ -1,11 +1,14 @@
+import { beforeEach, vi } from 'vitest'
 import { screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 
 import { renderWithProvider, testDigitalOnlyInput } from '../utils/testUtils.jsx'
 import FutureProjectionsPanel from './FutureProjectionsPanel'
-import userEvent from '@testing-library/user-event'
 
 describe('FutureProjectionsPanel', async () => {
   beforeEach(async () => {
+    vi.clearAllMocks()
+
     renderWithProvider(<FutureProjectionsPanel />)
     const user = userEvent.setup()
 

@@ -5,12 +5,13 @@ import userEvent from '@testing-library/user-event'
 import { test, expect } from 'vitest'
 
 import companyReducer from '../reducers/companyReducer'
+import { rfrApi } from '../services/apiService'
 
 export const renderWithProvider = (ui) => {
   const store = configureStore({
     reducer: {
-      company: companyReducer
-    }
+      company: companyReducer,
+    },
   })
 
   const ProviderWrapper = ({ children }) => {
