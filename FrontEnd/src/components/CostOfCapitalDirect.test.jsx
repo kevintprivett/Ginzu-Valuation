@@ -1,35 +1,34 @@
-import { screen } from '@testing-library/react'
+import { screen } from '@testing-library/react';
 
-import { renderWithProvider, testDigitalOnlyInput } from '../utils/testUtils.jsx'
-import CostOfCapitalDirect from './CostOfCapitalDirect'
-
+import {
+  renderWithProvider,
+  testDigitalOnlyInput,
+} from '../utils/testUtils.jsx';
+import CostOfCapitalDirect from './CostOfCapitalDirect';
 
 describe('CostOfCapitalDirect', async () => {
   beforeEach(() => {
-    renderWithProvider(<CostOfCapitalDirect />)
-  })
+    renderWithProvider(<CostOfCapitalDirect />);
+  });
 
   test('component renders', () => {
-    const element = screen.getAllByText(
-      /Cost of Capital/
-    )[0]
+    const element = screen.getAllByText(/Cost of Capital/)[0];
 
-    expect(element).toBeDefined()
+    expect(element).toBeDefined();
 
-    const input = screen.getByRole('textbox')
+    const input = screen.getByRole('textbox');
 
-    expect(input).toBeDefined()
-  })
-
+    expect(input).toBeDefined();
+  });
 
   describe('Verify Digital Only Input', () => {
     const input = () => {
-      return screen.getByRole('textbox')
-    }
+      return screen.getByRole('textbox');
+    };
 
     testDigitalOnlyInput({
       providedInput: input,
-      suffix: '%'
-    })
-  })
-})
+      suffix: '%',
+    });
+  });
+});

@@ -1,165 +1,147 @@
-import { screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
+import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
-import { renderWithProvider } from '../utils/testUtils.jsx'
-import CostOfEquity from './CostOfEquity'
-
+import { renderWithProvider } from '../utils/testUtils.jsx';
+import CostOfEquity from './CostOfEquity';
 
 describe('CostOfEquity', async () => {
   beforeEach(() => {
-    renderWithProvider(<CostOfEquity />)
-  })
+    renderWithProvider(<CostOfEquity />);
+  });
 
   test('component renders', () => {
-    const element = screen.getByText(
-      /Shares Outstanding:/
-    )
+    const element = screen.getByText(/Shares Outstanding:/);
 
-    expect(element).toBeDefined()
-  })
-
+    expect(element).toBeDefined();
+  });
 
   describe('Verify beta approach select box', () => {
     test('Verify direct', async () => {
-      const user = userEvent.setup()
+      const user = userEvent.setup();
 
-      const dropDown = screen.getAllByRole('combobox')[0]
+      const dropDown = screen.getAllByRole('combobox')[0];
 
-      await user.click(dropDown)
+      await user.click(dropDown);
 
-      const select = screen.getByText(
-        /Direct Input/
-      )
+      const select = screen.getByText(/Direct Input/);
 
-      expect(select).toBeDefined()
+      expect(select).toBeDefined();
 
-      await user.click(select)
+      await user.click(select);
 
-      const newComponent = screen.getByText('Beta')
+      const newComponent = screen.getByText('Beta');
 
-      expect(newComponent).toBeDefined()
-    })
+      expect(newComponent).toBeDefined();
+    });
 
     test('Verify single', async () => {
-      const user = userEvent.setup()
+      const user = userEvent.setup();
 
-      const dropDown = screen.getAllByRole('combobox')[0]
+      const dropDown = screen.getAllByRole('combobox')[0];
 
-      await user.click(dropDown)
+      await user.click(dropDown);
 
-      const select = screen.getAllByText(
-        /Single Business/
-      )[1]
+      const select = screen.getAllByText(/Single Business/)[1];
 
-      expect(select).toBeDefined()
+      expect(select).toBeDefined();
 
-      await user.click(select)
+      await user.click(select);
 
-      const newComponent = screen.getByText(/Industry:/)
+      const newComponent = screen.getByText(/Industry:/);
 
-      expect(newComponent).toBeDefined()
-    })
+      expect(newComponent).toBeDefined();
+    });
 
     test('Verify multi', async () => {
-      const user = userEvent.setup()
+      const user = userEvent.setup();
 
-      const dropDown = screen.getAllByRole('combobox')[0]
+      const dropDown = screen.getAllByRole('combobox')[0];
 
-      await user.click(dropDown)
+      await user.click(dropDown);
 
-      const select = screen.getByText(
-        /Multiple Businesses/
-      )
+      const select = screen.getByText(/Multiple Businesses/);
 
-      expect(select).toBeDefined()
+      expect(select).toBeDefined();
 
-      await user.click(select)
+      await user.click(select);
 
-      const newComponent = screen.getByText('EV/Sales')
+      const newComponent = screen.getByText('EV/Sales');
 
-      expect(newComponent).toBeDefined()
-    })
-  })
+      expect(newComponent).toBeDefined();
+    });
+  });
 
   describe('Verify ERP approach select box', () => {
     test('Verify direct', async () => {
-      const user = userEvent.setup()
+      const user = userEvent.setup();
 
-      const dropDown = screen.getAllByRole('combobox')[1]
+      const dropDown = screen.getAllByRole('combobox')[1];
 
-      await user.click(dropDown)
+      await user.click(dropDown);
 
-      const select = screen.getByText(
-        /Direct Input/
-      )
+      const select = screen.getByText(/Direct Input/);
 
-      expect(select).toBeDefined()
+      expect(select).toBeDefined();
 
-      await user.click(select)
+      await user.click(select);
 
-      const newComponent = screen.getByText('ERP')
+      const newComponent = screen.getByText('ERP');
 
-      expect(newComponent).toBeDefined()
-    })
+      expect(newComponent).toBeDefined();
+    });
 
     test('Verify country', async () => {
-      const user = userEvent.setup()
+      const user = userEvent.setup();
 
-      const dropDown = screen.getAllByRole('combobox')[1]
+      const dropDown = screen.getAllByRole('combobox')[1];
 
-      await user.click(dropDown)
+      await user.click(dropDown);
 
-      const select = screen.getAllByText(
-        /Country of Incorporation/
-      )[1]
+      const select = screen.getAllByText(/Country of Incorporation/)[1];
 
-      expect(select).toBeDefined()
+      expect(select).toBeDefined();
 
-      await user.click(select)
+      await user.click(select);
 
-      const newComponent = screen.getByText(/Country of Incorporation:/)
+      const newComponent = screen.getByText(/Country of Incorporation:/);
 
-      expect(newComponent).toBeDefined()
-    })
+      expect(newComponent).toBeDefined();
+    });
 
     test('Verify countries', async () => {
-      const user = userEvent.setup()
+      const user = userEvent.setup();
 
-      const dropDown = screen.getAllByRole('combobox')[1]
+      const dropDown = screen.getAllByRole('combobox')[1];
 
-      await user.click(dropDown)
+      await user.click(dropDown);
 
-      const select = screen.getByText(
-        /Operating Countries/
-      )
+      const select = screen.getByText(/Operating Countries/);
 
-      expect(select).toBeDefined()
+      expect(select).toBeDefined();
 
-      await user.click(select)
+      await user.click(select);
 
-      const newComponent = screen.getByText('Country')
+      const newComponent = screen.getByText('Country');
 
-      expect(newComponent).toBeDefined()
-    })
+      expect(newComponent).toBeDefined();
+    });
 
     test('Verify regions', async () => {
-      const user = userEvent.setup()
+      const user = userEvent.setup();
 
-      const dropDown = screen.getAllByRole('combobox')[1]
+      const dropDown = screen.getAllByRole('combobox')[1];
 
-      await user.click(dropDown)
+      await user.click(dropDown);
 
-      const select = screen.getByText(
-        /Operating Regions/
-      )
+      const select = screen.getByText(/Operating Regions/);
 
-      expect(select).toBeDefined()
+      expect(select).toBeDefined();
 
-      await user.click(select)
+      await user.click(select);
 
-      const newComponent = screen.getByText('Region')
+      const newComponent = screen.getByText('Region');
 
-      expect(newComponent).toBeDefined()
-    })
-  })
-})
+      expect(newComponent).toBeDefined();
+    });
+  });
+});

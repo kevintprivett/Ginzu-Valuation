@@ -1,12 +1,9 @@
-import {
-  Stack,
-  Box
-} from '@mui/material'
+import { Stack, Box } from '@mui/material';
 
-import CostOfEquity from './CostOfEquity'
-import CostOfDebt from './CostOfDebt'
-import PreferredStock from './PreferredStock'
-import CostOfCapitalDetailedOutput from './CostOfCapitalDetailedOutput'
+import CostOfEquity from './CostOfEquity';
+import CostOfDebt from './CostOfDebt';
+import PreferredStock from './PreferredStock';
+import CostOfCapitalDetailedOutput from './CostOfCapitalDetailedOutput';
 
 const CostOfCapitalDetailed = () => {
   return (
@@ -22,7 +19,7 @@ const CostOfCapitalDetailed = () => {
         <CostOfCapitalDetailedOutput />
       </Stack>
     </Box>
-  )
-}
+  );
+};
 
-export default CostOfCapitalDetailed
+export default CostOfCapitalDetailed;

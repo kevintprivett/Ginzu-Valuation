@@ -1,4 +1,4 @@
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux';
 import {
   Typography,
   Table,
@@ -6,42 +6,40 @@ import {
   TableCell,
   TableContainer,
   TableHead,
-  TableRow
-} from '@mui/material'
+  TableRow,
+} from '@mui/material';
 
-import { 
+import {
   calculateValueOfDebt,
   calculateValueOfPreferred,
   calculateCostOfEquity,
   calculateCostOfDebt,
   calculateCostOfPreferred,
   calculateValueOfEquity,
-  calculateCostOfCapital
-} from '../utils/financialCalculations'
+  calculateCostOfCapital,
+} from '../utils/financialCalculations';
 
 const CostOfCapitalDetailedOutput = () => {
-  const company = useSelector((state) => state.company)
+  const company = useSelector((state) => state.company);
 
-  const marketValue = calculateValueOfEquity(company)
-  const debtValue = calculateValueOfDebt(company)
-  const preferredValue = calculateValueOfPreferred(company)
-  const totalCapital = marketValue + debtValue + preferredValue
+  const marketValue = calculateValueOfEquity(company);
+  const debtValue = calculateValueOfDebt(company);
+  const preferredValue = calculateValueOfPreferred(company);
+  const totalCapital = marketValue + debtValue + preferredValue;
 
-  const coe = calculateCostOfEquity(company)
-  const cod = calculateCostOfDebt(company)
-  const cop = calculateCostOfPreferred(company)
+  const coe = calculateCostOfEquity(company);
+  const cod = calculateCostOfDebt(company);
+  const cop = calculateCostOfPreferred(company);
 
-  const coc = calculateCostOfCapital(company)
+  const coc = calculateCostOfCapital(company);
 
   return (
     <>
-      <Typography variant='h4'>
-        Output
-      </Typography>
+      <Typography variant="h4">Output</Typography>
       <TableContainer
         sx={{
           alignItems: 'center',
-          justifyContent: 'center'
+          justifyContent: 'center',
         }}
       >
         <Table>
@@ -64,9 +62,15 @@ const CostOfCapitalDetailedOutput = () => {
             </TableRow>
             <TableRow>
               <TableCell>Weight in Cost of Capital</TableCell>
-              <TableCell>{((marketValue / totalCapital * 100) || 0).toFixed(2)}%</TableCell>
-              <TableCell>{((debtValue / totalCapital * 100) || 0).toFixed(2)}%</TableCell>
-              <TableCell>{((preferredValue / totalCapital * 100) || 0).toFixed(2)}%</TableCell>
+              <TableCell>
+                {((marketValue / totalCapital) * 100 || 0).toFixed(2)}%
+              </TableCell>
+              <TableCell>
+                {((debtValue / totalCapital) * 100 || 0).toFixed(2)}%
+              </TableCell>
+              <TableCell>
+                {((preferredValue / totalCapital) * 100 || 0).toFixed(2)}%
+              </TableCell>
               <TableCell>100%</TableCell>
             </TableRow>
             <TableRow>
@@ -80,7 +84,7 @@ const CostOfCapitalDetailedOutput = () => {
         </Table>
       </TableContainer>
     </>
-  )
-}
+  );
+};
 
-export default CostOfCapitalDetailedOutput
+export default CostOfCapitalDetailedOutput;

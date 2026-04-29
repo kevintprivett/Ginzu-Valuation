@@ -1,19 +1,16 @@
-import { screen } from '@testing-library/react'
+import { screen } from '@testing-library/react';
 
-import { renderWithProvider } from '../utils/testUtils.jsx'
-import ValuationOutputPanel from './ValuationOutputPanel'
-
+import { renderWithProvider } from '../utils/testUtils.jsx';
+import ValuationOutputPanel from './ValuationOutputPanel';
 
 describe('ValuationOutputPanel', async () => {
   beforeEach(() => {
-    renderWithProvider(<ValuationOutputPanel />)
-  })
+    renderWithProvider(<ValuationOutputPanel />);
+  });
 
   test('component renders', () => {
-    const element = screen.getByText(
-      'Terminal Value'
-    )
+    const element = screen.getByText('Terminal Value');
 
-    expect(element).toBeDefined()
-  })
-})
+    expect(element).toBeDefined();
+  });
+});

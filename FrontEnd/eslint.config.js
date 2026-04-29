@@ -3,7 +3,7 @@ import globals from 'globals'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import reactHooks from 'eslint-plugin-react-hooks';
 
-export default [
+export default ([
   {
     ignores: ['dist/**', 'coverage/**', 'node_modules/**']
   },
@@ -24,18 +24,22 @@ export default [
       },
     },
     rules: {
-      ...reactHooks.configs.rules,
-      ...reactRefresh.configs.vite.rules,
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: '^_' }],
-      'no-warning-comments': ['error', { terms: ['fixme', 'todo', 'delete'], location: 'anywhere' }],
+      'no-unused-vars': [
+        'error',
+        { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: '^_' },
+      ],
+      'no-warning-comments': [
+        'error',
+        { terms: ['fixme', 'todo', 'delete'], location: 'anywhere' },
+      ],
     },
   },
   {
     files: ['**/*.test.{js,jsx}'],
     languageOptions: {
       globals: {
-        ...globals.vitest
-      }
-    }
-  }
-]
+        ...globals.vitest,
+      },
+    },
+  },
+]);
