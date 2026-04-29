@@ -1,11 +1,11 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactRefresh from 'eslint-plugin-react-refresh'
+import js from '@eslint/js';
+import globals from 'globals';
+import reactRefresh from 'eslint-plugin-react-refresh';
 import reactHooks from 'eslint-plugin-react-hooks';
 
-export default ([
+export default [
   {
-    ignores: ['dist/**', 'coverage/**', 'node_modules/**']
+    ignores: ['dist/**', 'coverage/**', 'node_modules/**'],
   },
   {
     files: ['**/*.{js,jsx}'],
@@ -42,4 +42,4 @@ export default ([
       },
     },
   },
-]);
+];
