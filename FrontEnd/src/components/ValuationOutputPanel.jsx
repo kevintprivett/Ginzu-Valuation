@@ -80,7 +80,6 @@ const ValuationBarChart = (
     debt,
     minorityInterests,
     cash,
-    nonOperatingAssets,
     valueOfOptions,
     valueOfEquityCommon
   }
@@ -98,7 +97,6 @@ const ValuationBarChart = (
     {name: 'Debt', value: -debt},
     {name: 'Minority', value: -minorityInterests},
     {name: 'Cash', value: cash},
-    {name: 'Non-operating', value: nonOperatingAssets},
     {name: 'Options', value: -valueOfOptions},
     {name: 'Total Value', value: valueOfEquityCommon},
   ]
@@ -492,12 +490,6 @@ const ValuationOutputPanel = () => {
                 <TableCell>{`$${currencyWrapper(company.cash['Q10'])}MM`}</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>+ Non-operating Assets</TableCell>
-                <TableCell>
-                  {`$${currencyWrapper(company.nonOperatingAssets['Q10'])}MM`}
-                </TableCell>
-              </TableRow>
-              <TableRow>
                 <TableCell>Value of Equity</TableCell>
                 <TableCell>{`$${currencyWrapper(valueOfEquity)}MM`}</TableCell>
               </TableRow>
@@ -525,7 +517,6 @@ const ValuationOutputPanel = () => {
             debt={company.debt['Q10']}
             minorityInterests={company.minorityInterests['Q10']}
             cash={company.cash['Q10']}
-            nonOperatingAssets={company.nonOperatingAssets['Q10']}
             valueOfOptions={valueOfOptions}
             valueOfEquityCommon={valueOfEquityCommon}
           />

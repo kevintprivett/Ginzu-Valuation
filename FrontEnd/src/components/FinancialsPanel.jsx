@@ -263,13 +263,6 @@ const FinancialsPanel = () => {
           suffix='MM'
         />
         <ObjectRow
-          object={company['nonOperatingAssets']}
-          label='Non-Operating Assets'
-          onChange={(property, value) => handleObjectChange('nonOperatingAssets', value, property)}
-          prefix='$'
-          suffix='MM'
-        />
-        <ObjectRow
           object={company['minorityInterests']}
           label='Minority Interests'
           onChange={(property, value) => handleObjectChange('minorityInterests', value, property)}

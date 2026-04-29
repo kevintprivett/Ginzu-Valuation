@@ -91,8 +91,8 @@
         - ~~make a service to connect with the backend, look into how it should play with redux~~
         - ~~Make RFR read from backend instead of static market-data~~
         - Make a notification toast and error toast to reflect the ticker update
-        - BUG: future projections, long term, not rounding to two decimal
-        - BUG: Remove non operating assets
+        - ~~BUG: future projections, long term, not rounding to two decimal~~
+        - ~~BUG: Remove non operating assets~~
         - Maybe? add a fuzzy match lookup for the ticker
 - Sprint - CI/CD:
     - Figure out how to deploy all of this on main push
