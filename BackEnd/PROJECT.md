@@ -93,7 +93,7 @@
         - ~~Make a notification toast and error toast to reflect the ticker update~~
         - ~~BUG: future projections, long term, not rounding to two decimal~~
         - ~~BUG: Remove non operating assets~~
-        - test, lint, format
+        - ~~test, lint, format~~
 - Sprint - CI/CD:
     - Figure out how to deploy all of this on main push
     - Work on a better solution for handling logs, my logs after a few weeks is already around 50 MB
