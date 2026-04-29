@@ -7,6 +7,7 @@ import {
   ErpApproaches
 } from './Enums'
 import marketData from './marketData'
+import { rfrApi } from '../services/apiService'
 
 /*
  * NOTE:
@@ -667,7 +668,8 @@ const calculateEbitRdEffect = (company) => {
  */
 export const calculateRiskFreeRateLong = (company) => {
   const rfrOverride = company.overrides.rfrLong
-  return rfrOverride ? company.rfrLong : marketData.rfr
+  const { data: rfr } = rfrApi.endpoints.getRfr.useQuery()
+  return rfrOverride ? company.rfrLong : rfr
 }
 
 

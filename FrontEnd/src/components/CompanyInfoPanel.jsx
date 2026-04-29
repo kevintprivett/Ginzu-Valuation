@@ -18,7 +18,7 @@ import dayjs from 'dayjs'
 import { update, updateTicker } from '../reducers/companyReducer'
 import { Industries } from '../utils/Enums'
 import tickerMap from '../utils/ticker'
-import getTicker from '../utils/getTicker'
+import { getTicker } from '../services/apiService'
 
 const CompanyInfoPanel = () => {
   const dispatch = useDispatch()

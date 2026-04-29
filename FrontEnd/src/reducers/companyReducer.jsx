@@ -116,7 +116,8 @@ const initialState = {
     'taxRateEffectiveLong': false,
     'rfrLong': false,
     'failureChance': false,
-  }
+  },
+  rfr: 4.00
 }
 
 // eslint-disable-next-line no-unused-vars
@@ -224,7 +225,8 @@ const testCompany = {
     'taxRateEffectiveLong': false,
     'rfrLong': false,
     'failureChance': false,
-  }
+  },
+  rfr: 4.00
 }
 
 const companySlice = createSlice({

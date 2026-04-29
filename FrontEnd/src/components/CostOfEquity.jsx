@@ -9,7 +9,7 @@ import {
 
 import { update } from '../reducers/companyReducer'
 import { BetaApproaches, ErpApproaches } from '../utils/Enums'
-import marketData from '../utils/marketData'
+import { rfrApi } from '../services/apiService'
 import BetaDirect from './BetaDirect'
 import BetaSingle from './BetaSingle'
 import BetaMulti from './BetaMulti'
@@ -21,6 +21,8 @@ import ErpRegion from './ErpRegion'
 const CostOfEquity = () => {
   const dispatch = useDispatch()
   const company = useSelector((state) => state.company)
+
+  const { data: rfr } = rfrApi.endpoints.getRfr.useQuery()
 
   const handleChange = (key, value) => {
     dispatch(update({
@@ -55,7 +57,7 @@ const CostOfEquity = () => {
         <Typography
           variant='body1'
         >
-          Riskfree Rate: {marketData.rfr}%
+          Riskfree Rate: {rfr}%
         </Typography>
       </Stack>
       <Stack

@@ -48,6 +48,7 @@ import {
   projectRoic,
 } from '../utils/financialCalculations'
 import marketData from '../utils/marketData'
+import { rfrApi } from '../services/apiService'
 
 const textFieldProps = {
   variant: 'outlined',
@@ -435,6 +436,8 @@ const FutureProjectionsPanel = () => {
   const company = useSelector((state) => state.company)
   const [chartSelect, setChartSelect] = useState("")
 
+  const {data: rfr } = rfrApi.endpoints.getRfr.useQuery()
+
   const handleChange = (key, value) => {
     dispatch(update({
       key: key,
@@ -546,7 +549,7 @@ const FutureProjectionsPanel = () => {
           value={company.rfrLong}
           override={company.overrides.rfrLong}
           label='Risk Free Rate'
-          currentYear={`${marketData.rfr.toFixed(2)}%`}
+          currentYear={`${rfr.toFixed(2)}%`}
           defaultLongValue={calculateRiskFreeRateLong(company)}
           handleValueChange={(value) => handleChange('rfrLong', value)}
           handleOverrideChange={(value) => handleObjectChange('overrides', value, 'rfrLong')}

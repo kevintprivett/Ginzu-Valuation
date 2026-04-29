@@ -89,10 +89,11 @@
         - ~~Swap ticker and name, in front page~~
         - ~~Make button that appears next to ticker if the ticker is in the ticker.txt map~~
         - ~~make a service to connect with the backend, look into how it should play with redux~~
-        - Make RFR read from backend instead of static market-data
+        - ~~Make RFR read from backend instead of static market-data~~
         - Make a notification toast and error toast to reflect the ticker update
         - BUG: future projections, long term, not rounding to two decimal
         - BUG: Remove non operating assets
         - Maybe? add a fuzzy match lookup for the ticker
 - Sprint - CI/CD:
     - Figure out how to deploy all of this on main push
+    - Work on a better solution for handling logs, my logs after a few weeks is already around 50 MB
