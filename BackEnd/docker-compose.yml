@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: ginzu-backend
     volumes:
-      - /var/logs/Ginzu-Valuation:/var/logs/Ginzu-Valuation
+      - /var/log/Ginzu-Valuation:/var/log/Ginzu-Valuation
       - ./ginzu.db:/ginzu/BackEnd/ginzu.db
       - ../common/ticker.txt:/ginzu/common/ticker.txt
     ports:
