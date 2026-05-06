@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # adjust to your file system
-cd /home/ubuntu/ginzu/Pipeline
+cd /opt/Ginzu-Valuation/Pipeline
 
 source .venv/bin/activate
 

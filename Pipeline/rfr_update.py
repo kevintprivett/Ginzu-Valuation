@@ -8,8 +8,11 @@ import sqlite3
 import requests
 from bs4 import BeautifulSoup
 from pydantic import BaseModel, Field
+from dotenv import load_dotenv
 
-LOG_FILE = 'rfr_update.log'
+load_dotenv()
+
+LOG_FILE = os.getenv('RFR_LOG')
 
 logging.basicConfig(
     level=logging.INFO,

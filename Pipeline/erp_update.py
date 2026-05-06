@@ -5,8 +5,11 @@ import os
 
 import requests
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 
-LOG_FILE = 'erp_update.log'
+load_dotenv()
+
+LOG_FILE = os.getenv('ERP_LOG')
 
 logging.basicConfig(
     filename=LOG_FILE,

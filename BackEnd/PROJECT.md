@@ -84,8 +84,8 @@
 - ~~Sprint - Backend:~~
     - ~~Develop and deploy the full backend~~
     - ~~Create and deploy a docker image~~
-- Sprint - Frontend:
-    - Develop interface in frontend for making requests to this new backend for this data
+- ~~Sprint - Frontend:~~
+    - ~~Develop interface in frontend for making requests to this new backend for this data~~
         - ~~Swap ticker and name, in front page~~
         - ~~Make button that appears next to ticker if the ticker is in the ticker.txt map~~
         - ~~make a service to connect with the backend, look into how it should play with redux~~
@@ -96,4 +96,10 @@
         - ~~test, lint, format~~
 - Sprint - CI/CD:
     - Figure out how to deploy all of this on main push
+        - ~~ssh github action (appleboy/ssh-action)~~
+        - ~~create a github runner ssh key~~
+        - ~~deploy the app to /opt/ginzu~~
+        - ~~change the logs to be in /var/log/ginzu~~
+        - ensure that docker, logrotate, and cron are all looking at the right locations
     - Work on a better solution for handling logs, my logs after a few weeks is already around 50 MB
+        - Standard solution for linux is logrotate, make a logrotate config file for backend and pipeline

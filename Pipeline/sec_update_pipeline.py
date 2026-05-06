@@ -22,15 +22,15 @@ parser.add_argument("--debug", action="store_true", help="Logger Debug Mode")
 
 args = parser.parse_args()
 
-LOG_FILE = 'sec_update_pipeline.log'
-SUMMARY_FILE = 'sec_update_pipeline_summary.log'
-ERROR_FILE = 'sec_update_errors.json'
+load_dotenv()
+
+LOG_FILE = os.getenv('SEC_LOG')
+SUMMARY_FILE = os.getenv('SEC_SUMMARY_LOG')
+ERROR_FILE = os.getenv('SEC_ERROR_LOG')
 DB_FILE = '../BackEnd/ginzu.db'
 COMPANY_FACTS_URL = 'https://www.sec.gov/Archives/edgar/daily-index/xbrl/companyfacts.zip'
 TICKER_FILE = '../common/ticker.txt'
 TICKER_INDUSTRY_FILE = '../common/ticker_industry_map.json'
-
-load_dotenv()
 
 USER_AGENT = os.getenv('USER_AGENT')
 
