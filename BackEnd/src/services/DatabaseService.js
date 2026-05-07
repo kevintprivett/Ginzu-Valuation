@@ -24,9 +24,11 @@ const cacheCall = (key, call) => {
 
   let val = call();
 
-  if (!val) {val = -1}
+  if (!val) {
+    val = -1;
+  }
 
-  cache.set(key, val)
+  cache.set(key, val);
 
   return val !== -1 ? val : null;
 };

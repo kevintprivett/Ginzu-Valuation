@@ -100,6 +100,7 @@
         - ~~create a github runner ssh key~~
         - ~~deploy the app to /opt/ginzu~~
         - ~~change the logs to be in /var/log/ginzu~~
-        - ensure that docker, logrotate, and cron are all looking at the right locations
+        - ~~ensure that docker, logrotate, and cron are all looking at the right locations~~
+        - go through linting, formatting, etc
     - Work on a better solution for handling logs, my logs after a few weeks is already around 50 MB
         - Standard solution for linux is logrotate, make a logrotate config file for backend and pipeline
