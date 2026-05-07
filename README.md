@@ -13,11 +13,11 @@ https://pages.stern.nyu.edu/~adamodar/pc/fcffsimpleginzu.xlsx
 
 ### Usage
 
-Valuation requires a lot of data and unfortunately very little of that data is freely available programmatically, so this web app requires a fair amount of user input to value a company.  To quickly get started with a sample company, download [this file](sample/goog_data.json) for a valuation of Google and navigate to [Utils](https://kevintprivett.github.io/Ginzu-Valuation/#/utils) -> Import Company Data to upload the sample data.  You can then navigate to Valuation Output and see the results of the valuation.
+Valuation requires a lot of data and fortunately the SEC makes some of that data available for free.  On the Company Info tab, when you fill in a valid company ticker, a button appears called "Get Company Data" which can query the BackEnd of this webapp to pull all available data that's been processed from the SEC.  This won't pull all available data, and of the data available it would always be best to compare against other sources to make the data is accurate.  There are helpful links as you work through the different tabs to quickly find more financial data needed for this analysis.
+
+To quickly get started with a sample company, download [this file](sample/goog_data.json) for a valuation of Google and navigate to [Utils](https://kevintprivett.github.io/Ginzu-Valuation/#/utils) -> Import Company Data to upload the sample data.  You can then navigate to Valuation Output and see the results of the valuation.
 
 ![Screenshot of Valuation Output with Google's valuation and cash flow projections](sample/valuation_output_screenshot.png)
-
-While it is difficult to get programmatic access to financial data, the information is easily searchable, so there are helper search links throughout the web app to access stock pricing information, historical financial data, and SEC filings which will help you quickly access the data you need to complete a full valuation.
 
 To get the most accurate valuations, I recommend to use the detailed approaches (which are selected by default) and to fill out all information that is available.
 
@@ -34,15 +34,16 @@ The web app will cache the company data so you should be able to leave the site 
 
 ### Tech Stack
 
-Due to the long-lived data used for this project, it's able to be a front-end only web app with data updates injected in at regular intervals
-
 #### Front-End:
   - **React 19**
   - Vite, Vitest, Redux, MUI, Recharts
 
+#### Backend:
+  - **ExpressJS, SQLite**
+
 #### Pipeline:
   - **Python 3**
-  - BeautifulSoup4, Jupyter, Numpy, Pandas
+  - BeautifulSoup4, Pydantic, Jupyter, Numpy, Pandas
   - Weekly and Monthly updates are run through GitHub Actions
 
 ### Local Setup
@@ -68,6 +69,23 @@ npm run format
 npm run coverage
 ```
 
+#### BackEnd
+
+You can start the service with
+
+```bash
+docker compose up --build
+```
+
+Available npm scripts are:
+
+```bash
+npm run start
+npm run dev
+npm run lint
+npm run format
+```
+
 #### Pipeline
 
 Run the following commands to set up the pipeline locally:
@@ -79,15 +97,15 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Various pipelines to update [marketData.json].
+Various pipelines to update [marketData.json](FrontEnd/src/utils/marketData.json).
 
-[market_data_pipeline.ipynb] should be run yearly, usually around late January, depending on when Prof. Damodaran makes his data updates.  It should be run one cell at a time as the data tables may be formatted differently year to year.
+[market_data_pipeline.ipynb](Pipeline/market_data_pipeline.ipynb) should be run yearly, usually around late January, depending on when Prof. Damodaran makes his data updates.  It should be run one cell at a time as the data tables may be formatted differently year to year.
 
-[erp_update.py] is ran automatically on a github action workflow to update erp on a monthly basis.
+[erp_update.py](Pipeline/erp_update.py) is ran automatically on a github action workflow to update erp on a monthly basis.
 
-[rfr_update.py] will update the risk free rate and can be set to either update [marketData.json] or to insert the data into the BackEnd SQLite database using the --sqlite flag.  [run_rfr_update_sqlite.sh] will automate this process when paired with a cron job.
+[rfr_update.py](Pipeline/rfr_update.py) will update the risk free rate and can be set to either update [marketData.json] or to insert the data into the BackEnd SQLite database using the --sqlite flag.  [run_rfr_update_sqlite.sh](Pipeline/run_rfr_update_sqlite.sh) will automate this process when paired with a cron job.
 
-[sec_update_pipeline.py] will download a daily SEC zip file and process it into json files that match what is needed for the FrontEnd and load everything into the SQLite database.  [Run_sec_update_pipeline.sh] will automate this process when paired with a cron job.
+[sec_update_pipeline.py](Pipeline/sec_update_pipeline.py) will download a daily SEC zip file and process it into json files that match what is needed for the FrontEnd and load everything into the SQLite database.  [run_sec_update_pipeline.sh](Pipeline/run_sec_update_pipeline.sh) will automate this process when paired with a cron job.
 
 ### Future Enhancements
 
