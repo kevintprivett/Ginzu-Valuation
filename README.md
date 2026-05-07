@@ -64,6 +64,7 @@ npm run build
 npm run preview
 npm run lint
 npm run test
+npm run format
 npm run coverage
 ```
 
@@ -78,17 +79,19 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Various pipelines to update marketData.json.
+Various pipelines to update [marketData.json].
 
-market_data_pipeline.ipynb should be run yearly, usually around late January, depending on when Prof. Damodaran makes his data updates.  It should be run one cell at a time as the data tables may be formatted differently year to year.
+[market_data_pipeline.ipynb] should be run yearly, usually around late January, depending on when Prof. Damodaran makes his data updates.  It should be run one cell at a time as the data tables may be formatted differently year to year.
 
-erp_update.py and rfr_update.py are ran automatically to update erp on a monthly basis and rfr on a weekly basis.
+[erp_update.py] is ran automatically on a github action workflow to update erp on a monthly basis.
 
-The .github folder contains all the workflows to automatically update the ERP and RFR.
+[rfr_update.py] will update the risk free rate and can be set to either update [marketData.json] or to insert the data into the BackEnd SQLite database using the --sqlite flag.  [run_rfr_update_sqlite.sh] will automate this process when paired with a cron job.
+
+[sec_update_pipeline.py] will download a daily SEC zip file and process it into json files that match what is needed for the FrontEnd and load everything into the SQLite database.  [Run_sec_update_pipeline.sh] will automate this process when paired with a cron job.
 
 ### Future Enhancements
 
-  - [ ] Process [SEC data](https://www.sec.gov/search-filings/edgar-application-programming-interfaces) into a backend that can provide the relevant financial data to this web app.
+  - [x] Process [SEC data](https://www.sec.gov/search-filings/edgar-application-programming-interfaces) into a backend that can provide the relevant financial data to this web app.
   - [ ] Sensitivity Analysis
   - [ ] Monte Carlo Analysis
   - [ ] Better support for international companies

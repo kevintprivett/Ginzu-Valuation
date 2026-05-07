@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit'
-import dayjs from 'dayjs'
+import { createSlice } from '@reduxjs/toolkit';
+import dayjs from 'dayjs';
 
 import {
   Industries,
@@ -10,48 +10,48 @@ import {
   ErpApproaches,
   CodApproaches,
   CodCompanyTypes,
-  DebtRatings
-} from '../utils/Enums'
+  DebtRatings,
+} from '../utils/Enums';
 
 const initialState = {
   valuationDate: dayjs().format('YYYY-MM-DD'),
-  name: "",
-  ticker: "",
+  name: '',
+  ticker: '',
   industry: Industries.BLANK,
   stockPrice: 0,
   years10k: 1,
   revenues: {
     Q10: 0,
-    K10: 0
+    K10: 0,
   },
   ebit: {
     Q10: 0,
-    K10: 0
+    K10: 0,
   },
   interestExpense: {
     Q10: 0,
-    K10: 0
+    K10: 0,
   },
   equity: {
     Q10: 0,
-    K10: 0
+    K10: 0,
   },
   debt: {
     Q10: 0,
-    K10: 0
+    K10: 0,
   },
   debtMaturity: 0,
   cash: {
     Q10: 0,
-    K10: 0
+    K10: 0,
   },
   nonOperatingAssets: {
     Q10: 0,
-    K10: 0
+    K10: 0,
   },
   minorityInterests: {
     Q10: 0,
-    K10: 0
+    K10: 0,
   },
   nol: 0,
   taxRateMarginal: 21,
@@ -59,22 +59,28 @@ const initialState = {
   shares: 0,
   cocApproach: CocApproaches.DETAILED,
   cocDirect: 0,
-  businesses: [{
-    business: Industries.BLANK,
-    revenue: 0
-  }],
+  businesses: [
+    {
+      business: Industries.BLANK,
+      revenue: 0,
+    },
+  ],
   betaApproach: BetaApproaches.SINGLE,
   betaDirect: 0,
   erpApproach: ErpApproaches.COUNTRY,
   erpDirect: 0,
-  countries: [{
-    'country': Countries.UNITED_STATES,
-    'revenue': 0
-  }],
-  regions: [{
-    'region': Regions.NORTH_AMERICA,
-    'revenue': 0
-  }],
+  countries: [
+    {
+      country: Countries.UNITED_STATES,
+      revenue: 0,
+    },
+  ],
+  regions: [
+    {
+      region: Regions.NORTH_AMERICA,
+      revenue: 0,
+    },
+  ],
   codApproach: CodApproaches.ACTUAL,
   codDirect: 0,
   codCompanyType: CodCompanyTypes.SAFE,
@@ -90,19 +96,19 @@ const initialState = {
   hasRdExpenses: false,
   rdExpenses: [0],
   revenueGrowth: {
-    'next': 0,
-    'mid': 0,
-    'long': 0
+    next: 0,
+    mid: 0,
+    long: 0,
   },
   operatingMargin: {
-    'next': 0,
-    'mid': 0,
-    'long': 0
+    next: 0,
+    mid: 0,
+    long: 0,
   },
   salesCap: {
-    'next': 0,
-    'mid': 0,
-    'long': 0
+    next: 0,
+    mid: 0,
+    long: 0,
   },
   cocLong: 0,
   rocLong: 0,
@@ -110,55 +116,56 @@ const initialState = {
   rfrLong: 0,
   failureChance: 0,
   overrides: {
-    'revenueGrowth': false,
-    'cocLong': false,
-    'rocLong': false,
-    'taxRateEffectiveLong': false,
-    'rfrLong': false,
-    'failureChance': false,
-  }
-}
+    revenueGrowth: false,
+    cocLong: false,
+    rocLong: false,
+    taxRateEffectiveLong: false,
+    rfrLong: false,
+    failureChance: false,
+  },
+  rfr: 4.0,
+};
 
 // eslint-disable-next-line no-unused-vars
 const testCompany = {
   valuationDate: dayjs().format('YYYY-MM-DD'),
-  name: "test company",
-  ticker: "TST",
+  name: 'test company',
+  ticker: 'TST',
   industry: Industries.ADVERTISING,
   stockPrice: 25,
   years10k: 1,
   revenues: {
     Q10: 4500,
-    K10: 4000
+    K10: 4000,
   },
   ebit: {
     Q10: 440,
-    K10: 400
+    K10: 400,
   },
   interestExpense: {
     Q10: 220,
-    K10: 200
+    K10: 200,
   },
   equity: {
     Q10: 4000,
-    K10: 4000
+    K10: 4000,
   },
   debt: {
     Q10: 400,
-    K10: 400
+    K10: 400,
   },
   debtMaturity: 3,
   cash: {
     Q10: 100,
-    K10: 95
+    K10: 95,
   },
   nonOperatingAssets: {
     Q10: 10,
-    K10: 10
+    K10: 10,
   },
   minorityInterests: {
     Q10: 10,
-    K10: 10
+    K10: 10,
   },
   nol: 0,
   taxRateMarginal: 21,
@@ -166,22 +173,28 @@ const testCompany = {
   shares: 100,
   cocApproach: CocApproaches.DETAILED,
   cocDirect: 0,
-  businesses: [{
-    business: Industries.Advertising,
-    revenue: 4000
-  }],
+  businesses: [
+    {
+      business: Industries.Advertising,
+      revenue: 4000,
+    },
+  ],
   betaApproach: BetaApproaches.SINGLE,
   betaDirect: 0,
   erpApproach: ErpApproaches.COUNTRY,
   erpDirect: 0,
-  countries: [{
-    'country': Countries.UNITED_STATES,
-    'revenue': 4000
-  }],
-  regions: [{
-    'region': Regions.NORTH_AMERICA,
-    'revenue': 4000
-  }],
+  countries: [
+    {
+      country: Countries.UNITED_STATES,
+      revenue: 4000,
+    },
+  ],
+  regions: [
+    {
+      region: Regions.NORTH_AMERICA,
+      revenue: 4000,
+    },
+  ],
   codApproach: CodApproaches.ACTUAL,
   codDirect: 0,
   codCompanyType: CodCompanyTypes.SAFE,
@@ -197,19 +210,19 @@ const testCompany = {
   hasRdExpenses: false,
   rdExpenses: [0],
   revenueGrowth: {
-    'next': 10,
-    'mid': 10,
-    'long': 0
+    next: 10,
+    mid: 10,
+    long: 0,
   },
   operatingMargin: {
-    'next': 15,
-    'mid': 15,
-    'long': 15 
+    next: 15,
+    mid: 15,
+    long: 15,
   },
   salesCap: {
-    'next': 1.5,
-    'mid': 1.5,
-    'long': 1.5 
+    next: 1.5,
+    mid: 1.5,
+    long: 1.5,
   },
   cocLong: 0,
   rocLong: 0,
@@ -217,15 +230,16 @@ const testCompany = {
   rfrLong: 0,
   failureChance: 0,
   overrides: {
-    'revenueGrowth': false,
-    'salesCap': false,
-    'cocLong': false,
-    'rocLong': false,
-    'taxRateEffectiveLong': false,
-    'rfrLong': false,
-    'failureChance': false,
-  }
-}
+    revenueGrowth: false,
+    salesCap: false,
+    cocLong: false,
+    rocLong: false,
+    taxRateEffectiveLong: false,
+    rfrLong: false,
+    failureChance: false,
+  },
+  rfr: 4.0,
+};
 
 const companySlice = createSlice({
   name: 'company',
@@ -233,19 +247,25 @@ const companySlice = createSlice({
   // initialState:  testCompany,
   reducers: {
     update(state, action) {
-      const key = action.payload.key
-      const value = action.payload.value
+      const key = action.payload.key;
+      const value = action.payload.value;
 
-      state[key] = value
+      state[key] = value;
     },
     updateAll(_state, action) {
-      return action.payload
+      return action.payload;
     },
     reset(_state, _action) {
-      return initialState
-    }
-  }
-})
+      return initialState;
+    },
+    updateTicker(_state, action) {
+      return {
+        ...initialState,
+        ...action.payload,
+      };
+    },
+  },
+});
 
-export const { update, updateAll, reset } = companySlice.actions
-export default companySlice.reducer
+export const { update, updateAll, reset, updateTicker } = companySlice.actions;
+export default companySlice.reducer;

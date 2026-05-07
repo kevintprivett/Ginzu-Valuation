@@ -1,43 +1,32 @@
-import { useDispatch, useSelector } from 'react-redux'
-import {
-  Typography,
-  TextField,
-  Grid,
-  Stack,
-  Box
-} from '@mui/material'
-import { NumericFormat } from 'react-number-format'
+import { useDispatch, useSelector } from 'react-redux';
+import { Typography, TextField, Grid, Stack, Box } from '@mui/material';
+import { NumericFormat } from 'react-number-format';
 
-import { update } from '../reducers/companyReducer'
-import marketData from '../utils/marketData'
+import { update } from '../reducers/companyReducer';
+import marketData from '../utils/marketData';
 
 const textFieldProps = {
   variant: 'outlined',
-  size: 'small'
-}
+  size: 'small',
+};
 
 const ErpDirect = () => {
-  const dispatch = useDispatch()
-  const company = useSelector((state) => state.company)
+  const dispatch = useDispatch();
+  const company = useSelector((state) => state.company);
 
   const handleChange = (key, value) => {
-    dispatch(update({
-      key: key,
-      value: value
-    }))
-  }
+    dispatch(
+      update({
+        key: key,
+        value: value,
+      })
+    );
+  };
 
   return (
     <>
-      <Stack
-        direction='row'
-        spacing={2}
-        alignItems='center'
-      >
-        <Typography
-          variant='body1'
-          align='center'
-        >
+      <Stack direction="row" spacing={2} alignItems="center">
+        <Typography variant="body1" align="center">
           ERP
         </Typography>
         <NumericFormat
@@ -47,22 +36,20 @@ const ErpDirect = () => {
           thousandSeparator
           suffix="%"
           onValueChange={(values) => {
-            handleChange('erpDirect', values.floatValue)
+            handleChange('erpDirect', values.floatValue);
           }}
           customInput={TextField}
-          {...textFieldProps
-          }
+          {...textFieldProps}
         />
       </Stack>
-      <Typography
-        variant='body1'
-        align='left'
-        sx={{ minWidth: 400 }}
-      >
-        <em>Equity Risk Premium for U.S. is {marketData.countries["United States"].ERP}%</em>
+      <Typography variant="body1" align="left" sx={{ minWidth: 400 }}>
+        <em>
+          Equity Risk Premium for U.S. is{' '}
+          {marketData.countries['United States'].ERP}%
+        </em>
       </Typography>
     </>
-  )
-}
+  );
+};
 
-export default ErpDirect
+export default ErpDirect;

@@ -1,91 +1,88 @@
-import { screen, act } from '@testing-library/react'
+import { screen, act } from '@testing-library/react';
 
-import { renderWithProvider, testDigitalOnlyInput } from '../utils/testUtils.jsx'
-import Options from './Options'
-import { update } from '../reducers/companyReducer'
-
+import {
+  renderWithProvider,
+  testDigitalOnlyInput,
+} from '../utils/testUtils.jsx';
+import Options from './Options';
+import { update } from '../reducers/companyReducer';
 
 describe('Options', async () => {
-  let store
+  let store;
   beforeEach(() => {
-    const result = renderWithProvider(<Options />)
+    const result = renderWithProvider(<Options />);
 
-    store = result.store
-  })
+    store = result.store;
+  });
 
   test('component renders', () => {
-    const element = screen.getByText(
-      'Average Maturity'
-    )
+    const element = screen.getByText('Average Maturity');
 
-    expect(element).toBeDefined()
-  })
-
+    expect(element).toBeDefined();
+  });
 
   describe('Verify input for number of options', () => {
     const input = () => {
-      return screen.getAllByRole('textbox')[0]
-    }
+      return screen.getAllByRole('textbox')[0];
+    };
 
     testDigitalOnlyInput({
       providedInput: input,
-      suffix: ' million'
-    })
-  })
+      suffix: ' million',
+    });
+  });
 
   describe('Verify input for strike price', () => {
     const input = () => {
-      return screen.getAllByRole('textbox')[1]
-    }
+      return screen.getAllByRole('textbox')[1];
+    };
 
     testDigitalOnlyInput({
       providedInput: input,
-      prefix: '$'
-    })
-  })
+      prefix: '$',
+    });
+  });
 
   describe('Verify input for maturity', () => {
     const input = () => {
-      return screen.getAllByRole('textbox')[2]
-    }
+      return screen.getAllByRole('textbox')[2];
+    };
 
     testDigitalOnlyInput({
       providedInput: input,
-      suffix: ' years'
-    })
-  })
+      suffix: ' years',
+    });
+  });
 
   describe('Verify input for IV', () => {
     const input = () => {
-      return screen.getAllByRole('textbox')[3]
-    }
+      return screen.getAllByRole('textbox')[3];
+    };
 
     testDigitalOnlyInput({
       providedInput: input,
-      suffix: '%'
-    })
-  })
+      suffix: '%',
+    });
+  });
 
   describe('Verify search links', () => {
     test('Link appears when ticker and name is present', async () => {
-      const linkBefore= screen.queryByText(
-        /Yahoo Options Search/
-      )
+      const linkBefore = screen.queryByText(/Yahoo Options Search/);
 
-      expect(linkBefore).toBeNull()
+      expect(linkBefore).toBeNull();
 
       act(() => {
-        store.dispatch(update({
-          key: 'ticker',
-          value: 'GOOGL'
-        }))
-      })
+        store.dispatch(
+          update({
+            key: 'ticker',
+            value: 'GOOGL',
+          })
+        );
+      });
 
-      const linkAfter= await screen.findByText(
-        /Yahoo Options Search/
-      )
+      const linkAfter = await screen.findByText(/Yahoo Options Search/);
 
-      expect(linkAfter).toBeDefined()
-    })
-  })
-})
+      expect(linkAfter).toBeDefined();
+    });
+  });
+});

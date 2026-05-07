@@ -1,43 +1,37 @@
-import { screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
+import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
-import { renderWithProvider } from '../utils/testUtils.jsx'
-import CostOfDebtSynthetic from './CostOfDebtSynthetic'
-
+import { renderWithProvider } from '../utils/testUtils.jsx';
+import CostOfDebtSynthetic from './CostOfDebtSynthetic';
 
 describe('CostOfDebtSynthetic', async () => {
   beforeEach(() => {
-    renderWithProvider(<CostOfDebtSynthetic />)
-  })
+    renderWithProvider(<CostOfDebtSynthetic />);
+  });
 
   test('component renders', () => {
-    const element = screen.getByText(
-      'Company Type'
-    )
+    const element = screen.getByText('Company Type');
 
-    expect(element).toBeDefined()
-  })
-
+    expect(element).toBeDefined();
+  });
 
   describe('Verify company type select box', () => {
     test('Verify that a company type can be selected', async () => {
-      const user = userEvent.setup()
+      const user = userEvent.setup();
 
-      const dropDown = screen.getByText('Large and Safe Company')
+      const dropDown = screen.getByText('Large and Safe Company');
 
-      await user.click(dropDown)
+      await user.click(dropDown);
 
-      const select = screen.getByText(
-        'Small and Risky Company'
-      )
+      const select = screen.getByText('Small and Risky Company');
 
-      expect(select).toBeDefined()
+      expect(select).toBeDefined();
 
-      await user.click(select)
+      await user.click(select);
 
-      const newComponent = screen.getByText('Small and Risky Company')
+      const newComponent = screen.getByText('Small and Risky Company');
 
-      expect(newComponent).toBeDefined()
-    })
-  })
-})
+      expect(newComponent).toBeDefined();
+    });
+  });
+});

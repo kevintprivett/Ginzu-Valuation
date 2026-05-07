@@ -1,43 +1,37 @@
-import { screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
+import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
-import { renderWithProvider } from '../utils/testUtils.jsx'
-import CostOfDebtActual from './CostOfDebtActual'
-
+import { renderWithProvider } from '../utils/testUtils.jsx';
+import CostOfDebtActual from './CostOfDebtActual';
 
 describe('CostOfDebtActual', async () => {
   beforeEach(() => {
-    renderWithProvider(<CostOfDebtActual />)
-  })
+    renderWithProvider(<CostOfDebtActual />);
+  });
 
   test('component renders', () => {
-    const element = screen.getByText(
-      'Company Debt Rating'
-    )
+    const element = screen.getByText('Company Debt Rating');
 
-    expect(element).toBeDefined()
-  })
-
+    expect(element).toBeDefined();
+  });
 
   describe('Verify credit rating select box', () => {
     test('Verify that a rating can be selected', async () => {
-      const user = userEvent.setup()
+      const user = userEvent.setup();
 
-      const dropDown = screen.getByText('Select a Credit Rating')
+      const dropDown = screen.getByText('Select a Credit Rating');
 
-      await user.click(dropDown)
+      await user.click(dropDown);
 
-      const select = screen.getByText(
-        'A3/A-'
-      )
+      const select = screen.getByText('A3/A-');
 
-      expect(select).toBeDefined()
+      expect(select).toBeDefined();
 
-      await user.click(select)
+      await user.click(select);
 
-      const newComponent = screen.getByText('A3/A-')
+      const newComponent = screen.getByText('A3/A-');
 
-      expect(newComponent).toBeDefined()
-    })
-  })
-})
+      expect(newComponent).toBeDefined();
+    });
+  });
+});

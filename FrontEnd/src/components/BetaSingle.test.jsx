@@ -1,19 +1,16 @@
-import { screen } from '@testing-library/react'
+import { screen } from '@testing-library/react';
 
-import { renderWithProvider } from '../utils/testUtils.jsx'
-import BetaSingle from './BetaSingle'
-
+import { renderWithProvider } from '../utils/testUtils.jsx';
+import BetaSingle from './BetaSingle';
 
 describe('BetaSingle', async () => {
   beforeEach(() => {
-    renderWithProvider(<BetaSingle />)
-  })
+    renderWithProvider(<BetaSingle />);
+  });
 
   test('component renders', () => {
-    const element = screen.getByText(
-      /Industry:/
-    )
+    const element = screen.getByText(/Industry:/);
 
-    expect(element).toBeDefined()
-  })
-})
+    expect(element).toBeDefined();
+  });
+});

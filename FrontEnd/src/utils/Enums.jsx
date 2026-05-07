@@ -93,8 +93,8 @@ export const Industries = Object.freeze({
   TRANSPORTATION_RAILROADS: 'Transportation (Railroads)',
   TRUCKING: 'Trucking',
   UTILITY_GENERAL: 'Utility (General)',
-  UTILITY_WATER: 'Utility (Water)'
-})
+  UTILITY_WATER: 'Utility (Water)',
+});
 
 export const Countries = Object.freeze({
   BLANK: 'Select a Country',
@@ -274,7 +274,7 @@ export const Countries = Object.freeze({
   TANZANIA: 'Tanzania',
   THAILAND: 'Thailand',
   TOGO: 'Togo',
-  TRINIDAD_TOBAGO: "Trinidad & Tobago",
+  TRINIDAD_TOBAGO: 'Trinidad & Tobago',
   TUNISIA: 'Tunisia',
   TURKEY: 'Turkey',
   TURKS_CAICOS_ISLANDS: 'Turks & Caicos Islands',
@@ -289,8 +289,8 @@ export const Countries = Object.freeze({
   VIETNAM: 'Vietnam',
   YEMEN: 'Yemen',
   ZAMBIA: 'Zambia',
-  ZIMBABWE: 'Zimbabwe'
-})
+  ZIMBABWE: 'Zimbabwe',
+});
 
 export const Regions = Object.freeze({
   BLANK: 'Select a Region',
@@ -304,38 +304,38 @@ export const Regions = Object.freeze({
   NORTH_AMERICA: 'North America',
   WESTERN_EUROPE: 'Western Europe',
   EMEA: 'EMEA',
-  ROW: 'Rest of World'
-})
+  ROW: 'Rest of World',
+});
 
 export const CocApproaches = Object.freeze({
   DIRECT: 'Direct Input',
   AVERAGE: 'Industry Average',
-  DETAILED: 'Detailed Approach'
-})
+  DETAILED: 'Detailed Approach',
+});
 
 export const BetaApproaches = Object.freeze({
   DIRECT: 'Direct Input',
   SINGLE: 'Single Business',
-  MULTI: 'Multiple Businesses'
-})
+  MULTI: 'Multiple Businesses',
+});
 
 export const ErpApproaches = Object.freeze({
   DIRECT: 'Direct Input',
   COUNTRY: 'Country of Incorporation',
   COUNTRIES: 'Operating Countries',
-  REGIONS: 'Operating Regions'
-})
+  REGIONS: 'Operating Regions',
+});
 
 export const CodApproaches = Object.freeze({
   DIRECT: 'Direct Input',
   SYNTHETIC: 'Synthetic Credit Rating',
-  ACTUAL: 'Actual Credit Rating'
-})
+  ACTUAL: 'Actual Credit Rating',
+});
 
 export const CodCompanyTypes = Object.freeze({
   SAFE: 'Large and Safe Company',
-  RISKY: 'Small and Risky Company'
-})
+  RISKY: 'Small and Risky Company',
+});
 
 export const DebtRatings = Object.freeze({
   BLANK: 'Select a Credit Rating',
@@ -353,10 +353,10 @@ export const DebtRatings = Object.freeze({
   C: 'C2/C',
   CC: 'Ca2/CC',
   CCC: 'Caa/CCC',
-  D: 'D2/D'
-})
+  D: 'D2/D',
+});
 
 export const YesNo = Object.freeze({
   YES: 'Yes',
-  NO: 'No'
-})
+  NO: 'No',
+});

@@ -1,6 +1,6 @@
-import Header from './components/Header'
-import MainWindow from './components/MainWindow'
-import Footer from './components/Footer'
+import Header from './components/Header';
+import MainWindow from './components/MainWindow';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <MainWindow />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

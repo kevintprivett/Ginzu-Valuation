@@ -11,10 +11,10 @@ const theme = createTheme({
       paper: '#274268',
     },
     divider: '#091f3d',
-    },
+  },
   typography: {
     fontFamily: 'Open Sans',
   },
-})
+});
 
-export default theme
+export default theme;

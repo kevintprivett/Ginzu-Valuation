@@ -1,37 +1,30 @@
-import { screen } from '@testing-library/react'
+import { vi, beforeEach } from 'vitest';
+import { screen } from '@testing-library/react';
 
-import { renderWithProvider } from '../utils/testUtils.jsx'
-import CostOfCapitalDetailed from './CostOfCapitalDetailed'
-
+import { renderWithProvider } from '../utils/testUtils.jsx';
+import CostOfCapitalDetailed from './CostOfCapitalDetailed';
 
 describe('CostOfCapitalDetailed', async () => {
   beforeEach(() => {
-    renderWithProvider(<CostOfCapitalDetailed />)
-  })
+    vi.clearAllMocks();
+    renderWithProvider(<CostOfCapitalDetailed />);
+  });
 
   test('component renders', () => {
-    const equityComponent = screen.getByText(
-      /Shares Outstanding:/
-    )
+    const equityComponent = screen.getByText(/Shares Outstanding:/);
 
-    expect(equityComponent).toBeDefined()
-  
-    const debtComponent = screen.getByText(
-      /Book Value of Debt:/
-    )
+    expect(equityComponent).toBeDefined();
 
-    expect(debtComponent).toBeDefined()
+    const debtComponent = screen.getByText(/Book Value of Debt:/);
 
-    const preferredComponent = screen.getByText(
-      /Number of Preferred Shares/
-    )
+    expect(debtComponent).toBeDefined();
 
-    expect(preferredComponent).toBeDefined()
+    const preferredComponent = screen.getByText(/Number of Preferred Shares/);
 
-    const outputComponent = screen.getByText(
-      'Output'
-    )
+    expect(preferredComponent).toBeDefined();
 
-    expect(outputComponent).toBeDefined()
-  })
-})
+    const outputComponent = screen.getByText('Output');
+
+    expect(outputComponent).toBeDefined();
+  });
+});
