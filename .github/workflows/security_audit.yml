@@ -19,9 +19,15 @@ jobs:
           cache-dependency-path: './FrontEnd'
           node-version: lts/*
           cache: 'npm'
-      - name: Install dependencies
+      - name: Install dependencies - FrontEnd
         working-directory: ./FrontEnd
         run: npm ci
-      - name: Security audit
+      - name: Security audit - FrontEnd
         working-directory: ./FrontEnd
-        run: npm audit --audit-level=high
+        run: npm audit --audit-level=high --omit==dev
+      - name: Install dependencies - BackEnd
+        working-directory: ./BackEnd
+        run: npm ci
+      - name: Security audit - BackEnd
+        working-directory: ./BackEnd
+        run: npm audit --audit-level=high --omit==dev

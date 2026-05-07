@@ -41,7 +41,11 @@ jobs:
 
       - name: Security audit
         working-directory: ./FrontEnd
-        run: npm audit --audit-level=moderate
+        run: npm audit --audit-level=high --omit==dev
+
+      - name: format check
+        working-directory: ./FrontEnd
+        run: npm run format:check
 
       - name: Lint check
         working-directory: ./FrontEnd
@@ -64,6 +68,35 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './FrontEnd/dist'
+
+  test-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          cache-dependency-path: './BackEnd'
+          node-version: lts/*
+          cache: 'npm'
+
+      - name: Install dependencies
+        working-directory: ./BackEnd
+        run: npm ci
+
+      - name: Security audit
+        working-directory: ./BackEnd
+        run: npm audit --audit-level=high --omit==dev
+
+      - name: format check
+        working-directory: ./BackEnd
+        run: npm run format:check
+
+      - name: Lint check
+        working-directory: ./BackEnd
+        run: npm run lint
 
   deploy:
     needs: build-and-test
