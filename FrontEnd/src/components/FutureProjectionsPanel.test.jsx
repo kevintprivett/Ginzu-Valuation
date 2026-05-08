@@ -72,7 +72,7 @@ describe('FutureProjectionsPanel', async () => {
     testDigitalOnlyInput({
       providedInput: input,
       prefix: '',
-      suffix: '%',
+      suffix: '.00%',
     });
   });
 });

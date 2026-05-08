@@ -33,6 +33,8 @@ export const testDigitalOnlyInput = ({
 
     const input = providedInput();
 
+    await user.clear(input);
+
     await user.type(input, '12345');
 
     expect(input).toHaveValue(`${prefix}12,345${suffix}`);
@@ -43,8 +45,10 @@ export const testDigitalOnlyInput = ({
 
     const input = providedInput();
 
+    await user.clear(input);
+
     await user.type(input, 'abcd');
 
-    expect(input).toHaveValue(`${prefix}0${suffix}`);
+    expect(input).toHaveValue('');
   });
 };

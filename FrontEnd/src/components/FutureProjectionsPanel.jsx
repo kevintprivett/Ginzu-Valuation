@@ -114,6 +114,8 @@ const SimpleRow = ({
           prefix={prefix}
           suffix={suffix}
           thousandSeparator
+          decimalScale={2}
+          fixedDecimalScale
           onValueChange={(values) => {
             handleValueChange(values.floatValue);
           }}
@@ -433,7 +435,9 @@ const FutureProjectionsPanel = () => {
   const company = useSelector((state) => state.company);
   const [chartSelect, setChartSelect] = useState('');
 
-  const { data: rfr } = rfrApi.endpoints.getRfr.useQuery();
+  const { data: rfrData, isLoading } = rfrApi.endpoints.getRfr.useQuery();
+
+  const rfr = isLoading ? 0 : rfrData;
 
   const handleChange = (key, value) => {
     dispatch(
