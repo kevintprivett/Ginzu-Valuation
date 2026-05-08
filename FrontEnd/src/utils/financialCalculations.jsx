@@ -844,13 +844,13 @@ export const projectReinvestmentExpense = (
   projectedEbit,
   projectedTaxExpense
 ) => {
-  const salesCapRatio = calculateSalesCapRatio(company);
+  const projectedSalesCap = projectSalesCap(company);
   const rocLong = calculateReturnOnCapitalLong(company);
 
   const result = [NaN];
 
   for (let i = 1; i < projectedRevenue.length - 1; ++i) {
-    let entry = (projectedRevenue[i + 1] - projectedRevenue[i]) / salesCapRatio;
+    let entry = (projectedRevenue[i + 1] - projectedRevenue[i]) / projectedSalesCap[i];
     result.push(Number.isFinite(entry) ? entry : 0);
   }
 
