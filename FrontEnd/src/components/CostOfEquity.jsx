@@ -16,7 +16,9 @@ const CostOfEquity = () => {
   const dispatch = useDispatch();
   const company = useSelector((state) => state.company);
 
-  const { data: rfr } = rfrApi.endpoints.getRfr.useQuery();
+  const { data: rfrData, isLoading } = rfrApi.endpoints.getRfr.useQuery();
+
+  const rfr = isLoading ? 0 : rfrData;
 
   const handleChange = (key, value) => {
     dispatch(
