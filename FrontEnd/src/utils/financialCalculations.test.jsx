@@ -1402,10 +1402,10 @@ describe('projectReinvestmentExpense', () => {
       rfrLong: 10,
       rocLong: 10,
       salesCap: {
-        'next': 1,
-        'mid': 1,
-        'long': 1
-      }
+        next: 1,
+        mid: 1,
+        long: 1,
+      },
     };
 
     const revGrowth = [10];

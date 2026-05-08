@@ -850,7 +850,8 @@ export const projectReinvestmentExpense = (
   const result = [NaN];
 
   for (let i = 1; i < projectedRevenue.length - 1; ++i) {
-    let entry = (projectedRevenue[i + 1] - projectedRevenue[i]) / projectedSalesCap[i];
+    let entry =
+      (projectedRevenue[i + 1] - projectedRevenue[i]) / projectedSalesCap[i];
     result.push(Number.isFinite(entry) ? entry : 0);
   }
 
