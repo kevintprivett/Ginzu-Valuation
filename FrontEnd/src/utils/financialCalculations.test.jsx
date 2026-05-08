@@ -1395,25 +1395,17 @@ describe('projectTaxExpense', () => {
 describe('projectReinvestmentExpense', () => {
   test('Basic test', () => {
     const company = {
-      revenues: {
-        Q10: 100,
-      },
-      equity: {
-        Q10: 100,
-      },
-      debt: {
-        Q10: 100,
-      },
-      cash: {
-        Q10: 100,
-      },
-      hasRdExpenses: false,
       overrides: {
         rocLong: true,
         rfrLong: true,
       },
       rfrLong: 10,
       rocLong: 10,
+      salesCap: {
+        next: 1,
+        mid: 1,
+        long: 1,
+      },
     };
 
     const revGrowth = [10];
