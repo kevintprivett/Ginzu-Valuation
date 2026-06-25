@@ -1805,7 +1805,7 @@ describe('calculateValueOfOptions', () => {
       optionStrike: 80,
       optionMaturity: 3,
       impliedVol: 20,
-      hasOptions: true
+      hasOptions: true,
     };
 
     const rfr = 0.04;
@@ -1823,7 +1823,7 @@ describe('calculateValueOfOptions', () => {
       optionStrike: 80,
       optionMaturity: 3,
       impliedVol: 20,
-      hasOptions: false
+      hasOptions: false,
     };
 
     const expected = 0.0;

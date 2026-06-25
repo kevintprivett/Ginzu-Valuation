@@ -1143,7 +1143,6 @@ export const calculateValueOfOptions = (
   company,
   rfr = calculateRiskFreeRateLong(company) / 100
 ) => {
-
   if (!company.hasOptions) {
     return 0.0;
   }
