@@ -1143,6 +1143,10 @@ export const calculateValueOfOptions = (
   company,
   rfr = calculateRiskFreeRateLong(company) / 100
 ) => {
+
+  if (!company.hasOptions) {
+    return 0.0;
+  }
   // NB: This is the standard black-scholes, damodaran uses a dilution adjusted BS
   // S
   const stockPrice = company.stockPrice;

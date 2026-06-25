@@ -1805,11 +1805,28 @@ describe('calculateValueOfOptions', () => {
       optionStrike: 80,
       optionMaturity: 3,
       impliedVol: 20,
+      hasOptions: true
     };
 
     const rfr = 0.04;
 
     const expected = 31.498;
+
+    const result = finCalcs.calculateValueOfOptions(company, rfr);
+
+    expect(result).toBeCloseTo(expected, 0);
+    expect(Number.isFinite(result)).toBe(true);
+  });
+  test('No Company Options -> No Option Value', () => {
+    const company = {
+      stockPrice: 100,
+      optionStrike: 80,
+      optionMaturity: 3,
+      impliedVol: 20,
+      hasOptions: false
+    };
+
+    const expected = 0.0;
 
     const result = finCalcs.calculateValueOfOptions(company, rfr);
 
